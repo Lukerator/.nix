@@ -1,0 +1,166 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg #282828; /* background color for the modules */ 
+@define-color text #D4BE98; /* text/icon color */ 
+@define-color focused #eba0ac; /* color for focused workspace */
+@define-color button #7c6f64; /* color for workspace buttons */
+
+window#waybar {
+	background-color: @transparent;
+	font-family: "Cantarell", "Font Awesome 5 Pro";
+	font-size: 9pt;
+	font-weight: bold;
+	margin-top: 8px;
+	min-height: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#window {
+	color: @text;
+	background-color: @bg;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces button.active {
+	color: @text;
+	background-color: @bg;
+	min-height: 0px;
+	margin-top: -2px;
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -13px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces button {
+	color: @button;
+	background-color: @bg;
+	min-height: 0px;
+	margin-top: -2px;
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -13px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces button.focused {
+	color: @bg;
+	background-color: @bg;
+	background: @focused;
+	min-height: 0px;
+	margin-top: -2px;
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -13px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces {
+	background-color: @bg;
+	color: @text;
+	min-height: 0px;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#clock {
+	color: @text;
+	background-color: @bg;
+	min-height: 0px;
+	margin-top: 8px;
+	margin-left: 2px;
+	margin-right: 13px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#network {
+	background-color: @bg;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#pulseaudio {
+	background-color: @bg;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#pulseaudio.muted {
+	background-color: @bg;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#backlight {
+	background-color: @bg;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#battery {
+	background-color: @bg;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}

@@ -1,0 +1,24 @@
+{
+	imports = [
+		./audio.nix
+		./boot.nix
+		./firefox.nix
+		./flakes.nix
+		./font.nix
+		./hardware.nix
+		./helper.nix
+		./hostname.nix
+		./locales.nix
+		./networkmanager.nix
+		./nvidia.nix
+		./polkit.nix
+		./printer.nix
+		./programs.nix
+		./razer.nix
+		./removecups.nix
+		./steam.nix
+		./usb.nix
+		./user.nix
+		./version.nix
+	];
+}
