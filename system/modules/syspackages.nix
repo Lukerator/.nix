@@ -8,6 +8,7 @@
 		fastfetch
 		fuzzel
 		git
+		gh
 		home-manager
 		localsend
 		lsd
