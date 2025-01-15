@@ -21,8 +21,8 @@
 				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 			]; # Window rules
 			general = {
-				gaps_in = 1; # Sets gap in size
-				gaps_out = 3; # Sets gap out size
+				gaps_in = 2; # Sets gap in size
+				gaps_out = 5; # Sets gap out size
 				#gaps_in = 5; # Sets gap in size
 				#gaps_out = 15; # Sets gap out size
 				border_size = 1; ## sets border size
