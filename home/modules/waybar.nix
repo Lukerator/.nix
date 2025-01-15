@@ -16,7 +16,6 @@
 				"hyprland/window"
 			];
 			modules-right = [
-				"tray"
 				"network"
 				"backlight"
 				"pulseaudio"
