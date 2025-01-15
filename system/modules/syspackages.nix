@@ -4,7 +4,6 @@
 		brightnessctl
 		catppuccin-sddm
 		dtrx
-		dunst
 		evince
 		fastfetch
 		fuzzel
@@ -29,7 +28,7 @@
 		reversal-icon-theme
 		syncthing
 		swaybg
-		#swaynotificationcenter
+		swaynotificationcenter
 		swayosd
 		swaylock-effects
 		typst
