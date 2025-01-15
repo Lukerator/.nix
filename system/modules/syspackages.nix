@@ -29,7 +29,7 @@
 		reversal-icon-theme
 		syncthing
 		swaybg
-		swaynotificationcenter
+		#swaynotificationcenter
 		swayosd
 		swaylock-effects
 		typst
