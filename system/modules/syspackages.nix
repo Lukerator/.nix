@@ -4,6 +4,7 @@
 		brightnessctl
 		catppuccin-sddm
 		dtrx
+		dunst
 		evince
 		fastfetch
 		fuzzel
