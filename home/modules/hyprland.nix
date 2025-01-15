@@ -21,11 +21,11 @@
 				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 			]; # Window rules
 			general = {
-				gaps_in = 2; # Sets gap in size
-				gaps_out = 5; # Sets gap out size
+				gaps_in = 4; # Sets gap in size
+				gaps_out = 8; # Sets gap out size
 				#gaps_in = 5; # Sets gap in size
 				#gaps_out = 15; # Sets gap out size
-				border_size = 1; ## sets border size
+				border_size = 2; ## sets border size
 				#border_size = 3; ## sets border size
 				layout = "dwindle"; # Sets layout to Dwindle
 			};
