@@ -21,9 +21,12 @@
 				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 			]; # Window rules
 			general = {
-				gaps_in = 5; # Sets gap in size
-				gaps_out = 15; # Sets gap out size
-				border_size = 3; ## sets border size
+				gaps_in = 1; # Sets gap in size
+				gaps_out = 3; # Sets gap out size
+				#gaps_in = 5; # Sets gap in size
+				#gaps_out = 15; # Sets gap out size
+				border_size = 1; ## sets border size
+				#border_size = 3; ## sets border size
 				layout = "dwindle"; # Sets layout to Dwindle
 			};
 			exec-once = [
@@ -50,7 +53,8 @@
 				",XF86AudioMicMute, exec, swayosd-client --input-volume mute-toggle"
 			]; # Volume and brightness keybinds
 			decoration = {
-				rounding = 10; # Rounds corners
+				#rounding = 10; # Rounds corners
+				rounding = 0; # Rounds corners
 				active_opacity = 0.98; # Sets opacity for active window
 				inactive_opacity = 0.93; # Sets opacity for inactive windows
 				blur = {
