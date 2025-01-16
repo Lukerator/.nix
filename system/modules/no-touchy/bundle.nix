@@ -20,5 +20,6 @@
 		./usb.nix
 		./user.nix
 		./version.nix
+		./aistuff.nix
 	];
 }
