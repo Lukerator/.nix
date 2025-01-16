@@ -2,6 +2,7 @@
 {
 	environment.systemPackages = with pkgs; [
 		brightnessctl
+		calibre
 		catppuccin-sddm
 		dtrx
 		evince
