@@ -2,7 +2,6 @@
 {
 	environment.systemPackages = with pkgs; [
 		brightnessctl
-		cachix
 		calibre
 		catppuccin-sddm
 		dtrx
