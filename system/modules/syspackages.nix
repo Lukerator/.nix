@@ -2,6 +2,7 @@
 {
 	environment.systemPackages = with pkgs; [
 		brightnessctl
+		cachix
 		calibre
 		catppuccin-sddm
 		dtrx
@@ -20,6 +21,8 @@
 		nautilus-open-any-terminal
 		nautilus-python
 		neovim-gtk
+		ollama-cuda
+		open-webui
 		p7zip
 		polkit_gnome
 		polychromatic
