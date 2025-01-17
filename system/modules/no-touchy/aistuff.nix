@@ -5,7 +5,7 @@
 			enable = true;
 			acceleration = "cuda";
 			loadModels = [
-				""
+				"gemma2:2b"
 			];
 		};
 	};
