@@ -15,7 +15,7 @@
 			home-update-no-git = "nh home switch -- --impure && nh clean all";
 			update-no-git = "nh os switch && nh home switch -- --impure && nh clean all";
 			upgrade-no-git = "nh os switch -u && nh home switch -- --impure && nh clean all";
-			git-update = ''cd ~/.nix && git commit -a -m "update" && cd - && clear && echo "Don't forget to git add"'';
+			git-update = ''cd ~/.nix && git add --all && git commit -a -m "update" && cd -'';
 			system-update = "system-update-no-git && git-update";
 			home-update = "home-update-no-git && git-update";
 			update = "update-no-git && git-update";
