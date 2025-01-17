@@ -5,6 +5,7 @@
 		calibre
 		catppuccin-sddm
 		dtrx
+		emulationstation-de
 		evince
 		fastfetch
 		fuzzel
@@ -28,6 +29,7 @@
 		protonup-qt
 		python3
 		qbittorrent-enhanced
+		retroarch
 		reversal-icon-theme
 		syncthing
 		swaybg
