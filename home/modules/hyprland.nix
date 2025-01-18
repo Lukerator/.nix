@@ -55,8 +55,8 @@
 			decoration = {
 				#rounding = 10; # Rounds corners
 				rounding = 0; # Rounds corners
-				active_opacity = 0.98; # Sets opacity for active window
-				inactive_opacity = 0.93; # Sets opacity for inactive windows
+				active_opacity = 1; # Sets opacity for active window
+				inactive_opacity = 0.95; # Sets opacity for inactive windows
 				blur = {
 					size = 3; # Sets blur strength
 					passes = 1; # Sets blur passes
