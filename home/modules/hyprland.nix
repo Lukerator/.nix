@@ -46,7 +46,7 @@
 			]; # Volume and brightness keybinds
 			input = {
 				repeat_rate = 50; # Sets the repeat rate
-				sensitivity = 0.5; # Sets sensitivity
+				sensitivity = 0.4; # Sets sensitivity
 				repeat_delay = 300; # Sets the repeat delay
 				follow_mouse = true; # sets focus to follow mouse
 				#force_no_accel = true; # Disables acceleration
