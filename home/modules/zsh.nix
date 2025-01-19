@@ -17,7 +17,7 @@
 			upgrade-no-git = "nh os switch -u && nh home switch -- --impure && nh clean all";
 			git-update = ''cd ~/.nix && git add --all && git commit -a -m "update" && cd -'';
 			update = "git-update && update-no-git";
-			upgrade = "git-update && upgrade-no-git";
+			upgrade = "git-update && upgrade-no-git && git-update";
 			home-update = "git-update && home-update-no-git";
 			system-update = "git-update && system-update-no-git";
 		}; # Sets aliases
