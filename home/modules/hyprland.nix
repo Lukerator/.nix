@@ -36,16 +36,6 @@
 				"killall -q waybar;sleep .5 && waybar"
 				"${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
 			]; # Background Startup programs
-			input = {
-				repeat_rate = 50; # Sets the repeat rate
-				sensitivity = 0.5; # Sets sensitivity
-				repeat_delay = 300; # Sets the repeat delay
-				follow_mouse = true; # sets focus to follow mouse
-				force_no_accel = true; # Disables acceleration
-				kb_layout = "us, ro"; # Sets keyboard language and layout
-				touchpad.natural_scroll = true; # Enables natural scroll
-				kb_options = "grp:win_space_toggle"; # Sets the layout switching keybind
-			};
 			bindel = [
 				",XF86MonBrightnessUp, exec, swayosd-client --brightness raise"
 				",XF86MonBrightnessDown, exec, swayosd-client --brightness lower"
@@ -54,6 +44,16 @@
 				",XF86AudioLowerVolume, exec, swayosd-client --output-volume lower --max-volume 150"
 				",XF86AudioMicMute, exec, swayosd-client --input-volume mute-toggle"
 			]; # Volume and brightness keybinds
+			input = {
+				repeat_rate = 50; # Sets the repeat rate
+				#sensitivity = 0.5; # Sets sensitivity
+				repeat_delay = 300; # Sets the repeat delay
+				follow_mouse = true; # sets focus to follow mouse
+				#force_no_accel = true; # Disables acceleration
+				kb_layout = "us, ro"; # Sets keyboard language and layout
+				touchpad.natural_scroll = true; # Enables natural scroll
+				kb_options = "grp:win_space_toggle"; # Sets the layout switching keybind
+			};
 			decoration = {
 				#rounding = 10; # Rounds corners
 				rounding = 0; # Rounds corners
