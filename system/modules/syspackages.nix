@@ -24,6 +24,7 @@
 		ollama-cuda
 		open-webui
 		p7zip
+		prismlauncher
 		polkit_gnome
 		polychromatic
 		protonup-qt
