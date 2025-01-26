@@ -1,6 +1,9 @@
 { pkgs, ... }:
 {
-	programs.hyprland.enable = true; # Enables Hyprland as a Window Manager/Desktop Environment
+	programs.hyprland = {
+		enable = true; # Enables Hyprland as a Window Manager/Desktop Environment
+		withUWSM = false;
+	};
 	services = {
 		xserver.enable = true;
 		displayManager.sddm = {
