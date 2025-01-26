@@ -9,7 +9,7 @@
 				basicAuthEnabled = true;
 				basicAuthUsername = "Lukerator";
 				basicAuthPasswordFile = ./Other/mangapass.txt;
-				extensionRepos = [ "https://raw.githubusercontent.com/suwayomi/tachiyomi-extension/repo/index.min.json" ];
+				extensionRepos = [ "https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" ];
 			};
 		};
 	};
