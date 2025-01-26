@@ -7,7 +7,8 @@
 			server = {
 				port = 4567;
 				basicAuthEnabled = true;
-				basicAuthUsername = "luke";
+				basicAuthUsername = "Lukerator";
+				basicAuthPasswordFile = ./Other/mangapass.txt;
 				extensionRepos = [ "https://raw.githubusercontent.com/suwayomi/tachiyomi-extension/repo/index.min.json" ];
 			};
 		};
