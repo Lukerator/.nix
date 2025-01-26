@@ -32,7 +32,6 @@
 		qbittorrent-enhanced
 		retroarch
 		reversal-icon-theme
-		suwayomi-server
 		syncthing
 		swaybg
 		swaynotificationcenter
