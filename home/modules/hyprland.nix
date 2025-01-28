@@ -7,7 +7,10 @@
 			"$mod" = "SUPER"; # Sets mod key to SUPER
 			dwindle.preserve_split = true; # Preserves split
 			gestures.workspace_swipe = true; # Enables swipe gesture
-			monitor = [ ", prefered, auto, 1" ]; # Sets monitor settings
+			monitor = [
+				"eDP-1, prefered, auto, 1"
+				"HDMI-A-2, prefered, auto, 1.5, mirror, eDP-1"
+			]; # Sets monitor settings
 			misc = {
 				force_default_wallpaper = 1; # Disables anime girl wallpaper
 				disable_hyprland_logo = true; # See line 13
