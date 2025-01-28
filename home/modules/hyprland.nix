@@ -9,7 +9,7 @@
 			gestures.workspace_swipe = true; # Enables swipe gesture
 			monitor = [
 				"eDP-1, prefered, auto, 1"
-				"HDMI-A-2, prefered, auto, 3, mirror, eDP-1"
+				"HDMI-A-2, prefered, auto, 3"
 			]; # Sets monitor settings
 			misc = {
 				force_default_wallpaper = 1; # Disables anime girl wallpaper
