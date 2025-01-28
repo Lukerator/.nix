@@ -3,7 +3,7 @@
 		./barbar.nix
 		./basic.nix
 		./conform.nix
-		./debug.nix
+		#./debug.nix
 		./lsp.nix
 		./lualine.nix
 		./neotree.nix
