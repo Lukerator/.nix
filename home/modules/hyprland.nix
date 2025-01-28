@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 {
 	specialisation.externalmonitor.configuration = {
-		wayland.windowManager.hyprland.setting = {
+		wayland.windowManager.hyprland.settings = {
 			monitor = lib.mkForce [
 				"eDP-1, prefered, auto, 2"
 				"HDMI-A-2, highres@highrr, auto, auto, mirror, eDP-1"
