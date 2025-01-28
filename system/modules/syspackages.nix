@@ -11,6 +11,7 @@
 		fuzzel
 		git
 		gh
+		gnome-boxes
 		home-manager
 		localsend
 		lsd
