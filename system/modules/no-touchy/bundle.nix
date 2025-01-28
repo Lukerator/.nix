@@ -22,5 +22,6 @@
 		./usb.nix
 		./user.nix
 		./version.nix
+		./vm.nix
 	];
 }
