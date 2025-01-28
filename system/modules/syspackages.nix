@@ -1,9 +1,12 @@
 { pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
+		angband
 		brightnessctl
 		calibre
+		cataclysm-dda
 		catppuccin-sddm
+		crawl
 		dtrx
 		emulationstation-de
 		evince
@@ -18,6 +21,7 @@
 		lua
 		lutris
 		mame-tools
+		nethack
 		nautilus
 		nautilus-open-any-terminal
 		nautilus-python
