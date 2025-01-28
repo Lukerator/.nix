@@ -16,6 +16,7 @@
 		gh
 		gnome-boxes
 		home-manager
+		kvmtool
 		localsend
 		lsd
 		lua
