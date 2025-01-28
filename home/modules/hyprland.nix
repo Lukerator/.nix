@@ -1,5 +1,13 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
+	specialisation.externalmonitor.configuration = {
+		wayland.windowManager.hyprland.setting = {
+			monitor = lib.mkForce [
+				"eDP-1, prefered, auto, 2"
+				"HDMI-A-2, highres@highrr, auto, auto, mirror, eDP-1"
+			];
+		};
+	};
 	wayland.windowManager.hyprland = {
 		enable = true; # Enables Hyprland
 		xwayland.enable = true; # Enables XWayland
@@ -9,7 +17,6 @@
 			gestures.workspace_swipe = true; # Enables swipe gesture
 			monitor = [
 				"eDP-1, prefered, auto, 1"
-				"HDMI-A-2, highres@highrr, auto, auto, mirror, eDP-1"
 			]; # Sets monitor settings
 			misc = {
 				force_default_wallpaper = 1; # Disables anime girl wallpaper
