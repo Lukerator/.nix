@@ -11,6 +11,7 @@
 		emulationstation-de
 		evince
 		fastfetch
+		file-roller
 		fuzzel
 		git
 		gh
@@ -27,7 +28,7 @@
 		neovim-gtk
 		ollama-cuda
 		open-webui
-		p7zip
+		p7zip-rar
 		prismlauncher
 		polkit_gnome
 		polychromatic
@@ -42,7 +43,6 @@
 		swayosd
 		swaylock-effects
 		typst
-		unrar
 		unzip
 		waybar
 		wineWowPackages.wayland
