@@ -42,6 +42,7 @@
 		swayosd
 		swaylock-effects
 		typst
+		unrar
 		unzip
 		waybar
 		wineWowPackages.wayland
