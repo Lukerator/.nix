@@ -6,7 +6,7 @@
 		calibre
 		cataclysm-dda
 		catppuccin-sddm
-		crawl
+		crawlTiles
 		dtrx
 		emulationstation-de
 		evince
