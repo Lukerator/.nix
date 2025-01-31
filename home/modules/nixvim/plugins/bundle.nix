@@ -3,11 +3,11 @@
 		./barbar.nix
 		./basic.nix
 		./conform.nix
-		#./debug.nix
 		./lsp.nix
 		./lualine.nix
 		./neotree.nix
 		./nvimcmp.nix
+		./obsidian.nix
 		./telescope.nix
 		./treesitter.nix
 	];

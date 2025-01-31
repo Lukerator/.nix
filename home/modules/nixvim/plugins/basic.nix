@@ -1,6 +1,5 @@
 {
 	programs.nixvim.plugins = {
-		zk.enable = true;
 		fidget.enable = true;
 		markview.enable = true;
 		typst-vim.enable = true;
