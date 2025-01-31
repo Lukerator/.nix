@@ -2,54 +2,60 @@
 	programs.nixvim.plugins.dashboard = {
 		enable = true;
 		settings = {
-			  change_to_vcs_root = true;
-  config = {
-    footer = [
-      "Made with ❤️"
-    ];
-    header = [
-      "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
-      "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
-      "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
-      "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
-      "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
-      "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
-    ];
-    mru = {
-      limit = 20;
-    };
-    project = {
-      enable = false;
-    };
-    shortcut = [
-      {
-        action = {
-          __raw = "function(path) vim.cmd('Telescope find_files') end";
-        };
-        desc = "Files";
-        group = "Label";
-        icon = " ";
-        icon_hl = "@variable";
-        key = "f";
-      }
-      {
-        action = "Telescope app";
-        desc = " Apps";
-        group = "DiagnosticHint";
-        key = "a";
-      }
-      {
-        action = "Telescope dotfiles";
-        desc = " dotfiles";
-        group = "Number";
-        key = "d";
-      }
-    ];
-    week_header = {
-      enable = true;
-    };
-  };
-  theme = "hyper";
+			theme = "hyper";
+			change_to_vcs_root = true;
+			project.enable = false;
+			hide = {
+				statusline = true;
+				tabline = true;
+			};
+			    shortcut = [
+				{
+					key = "f";
+					icon = " ";
+					desc = "Files";
+					group = "Label";
+					icon_hl = "@variable";
+					action.__raw = "function(path) vim.cmd('Telescope find_files') end";
+				}
+			];
+			config = {
+				header = [
+					"            :h-                                  Nhy`               "
+					"           -mh.                           h.    `Ndho               "
+					"           hmh+                          oNm.   oNdhh               "
+					"          `Nmhd`                        /NNmd  /NNhhd               "
+					"          -NNhhy                      `hMNmmm`+NNdhhh               "
+					"          .NNmhhs              ```....`..-:/./mNdhhh+               "
+					"           mNNdhhh-     `.-::///+++////++//:--.`-/sd`               "
+					"           oNNNdhhdo..://++//++++++/+++//++///++/-.`                "
+					"      y.   `mNNNmhhhdy+/++++//+/////++//+++///++////-` `/oos:       "
+					" .    Nmy:  :NNNNmhhhhdy+/++/+++///:.....--:////+++///:.`:s+        "
+					" h-   dNmNmy oNNNNNdhhhhy:/+/+++/-         ---:/+++//++//.`         "
+					" hd+` -NNNy`./dNNNNNhhhh+-://///    -+oo:`  ::-:+////++///:`        "
+					" /Nmhs+oss-:++/dNNNmhho:--::///    /mmmmmo  ../-///++///////.       "
+					"  oNNdhhhhhhhs//osso/:---:::///    /yyyyso  ..o+-//////////:/.      "
+					"   /mNNNmdhhhh/://+///::://////     -:::- ..+sy+:////////::/:/.     "
+					"     /hNNNdhhs--:/+++////++/////.      ..-/yhhs-/////////::/::/`    "
+					"       .ooo+/-::::/+///////++++//-/ossyyhhhhs/:///////:::/::::/:    "
+					"       -///:::::::////++///+++/////:/+ooo+/::///////.::://::---+`   "
+					"       /////+//++++/////+////-..//////////::-:::--`.:///:---:::/:   "
+					"       //+++//++++++////+++///::--                 .::::-------::   "
+					"       :/++++///////////++++//////.                -:/:----::../-   "
+					"       -/++++//++///+//////////////               .::::---:::-.+`   "
+					"       `////////////////////////////:.            --::-----...-/    "
+					"        -///://////////////////////::::-..      :-:-:-..-::.`.+`    "
+					"         :/://///:///::://::://::::::/:::::::-:---::-.-....``/- -   "
+					"           ::::://::://::::::::::::::----------..-:....`.../- -+oo/ "
+					"            -/:::-:::::---://:-::-::::----::---.-.......`-/.      ``"
+					"           s-`::--:::------:////----:---.-:::...-.....`./:          "
+					"          yMNy.`::-.--::..-dmmhhhs-..-.-.......`.....-/:`           "
+					"         oMNNNh. `-::--...:NNNdhhh/.--.`..``.......:/-              "
+					"        :dy+:`      .-::-..NNNhhd+``..`...````.-::-`                "
+					"                        .-:mNdhh:.......--::::-`                    "
+					"                           yNh/..------..`                          "
+				];
+			};
 		};
 	};
 }
