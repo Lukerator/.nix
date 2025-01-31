@@ -19,7 +19,7 @@
 				}
 			];
 			config = {
-				mru.limit = 20;
+				mru.limit = 5;
 				project.enable = false;
 				header = [
 					""
