@@ -4,7 +4,6 @@
 		settings = {
 			theme = "hyper";
 			change_to_vcs_root = true;
-			project.enable = false;
 			hide = {
 				statusline = true;
 				tabline = true;
@@ -20,6 +19,8 @@
 				}
 			];
 			config = {
+				mru.limit = 20;
+				project.enable = false;
 				header = [
 					"            :h-                                  Nhy`               "
 					"           -mh.                           h.    `Ndho               "
