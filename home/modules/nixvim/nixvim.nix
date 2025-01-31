@@ -28,7 +28,7 @@
 		opts = {
 			mouse = "a"; # Enable mouse support in all modes
 			list = true; # Enable display of list characters
-			scrolloff = 3; # Minimum lines to keep above and below the cursor
+			scrolloff = 10; # Minimum lines to keep above and below the cursor
 			number = true; # Show line numbers
 			hlsearch = true; # Highlight search matches
 			showmode = true; # Do not show mode in command line
@@ -41,7 +41,7 @@
 			splitright = true; # Enables vertical splits to the right of the current window
 			ignorecase = true; # Ignore case in search patterns
 			breakindent = true; # Enable break indent
-			cursorcolumn = true; # Highlight the current column
+			cursorcolumn = false; # Highlight the current column
 			inccommand = "split"; # Show the effects of a command incrementally in a split window
 			relativenumber = false; # Show relative line numbers
 			listchars.__raw = "{ tab = '» ', trail = '·' }"; # Define list characters for tabs and trailing spaces

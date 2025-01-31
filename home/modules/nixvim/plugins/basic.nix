@@ -7,7 +7,7 @@
 		cmp-nvim-lsp.enable = true;
 		web-devicons.enable = true;
 		nvim-autopairs.enable = true;
-		indent-blankline.enable = true;
+		#indent-blankline.enable = true;
 		rainbow-delimiters.enable = true;
 	};
 }
