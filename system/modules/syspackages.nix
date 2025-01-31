@@ -25,7 +25,7 @@
 		nautilus
 		nautilus-open-any-terminal
 		nautilus-python
-		neovim-gtk
+		neovide
 		ollama-cuda
 		open-webui
 		p7zip-rar
