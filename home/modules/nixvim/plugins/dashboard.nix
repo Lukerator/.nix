@@ -22,6 +22,8 @@
 				mru.limit = 20;
 				project.enable = false;
 				header = [
+					""
+					""
 					"            :h-                                  Nhy`               "
 					"           -mh.                           h.    `Ndho               "
 					"           hmh+                          oNm.   oNdhh               "
@@ -55,6 +57,8 @@
 					"        :dy+:`      .-::-..NNNhhd+``..`...````.-::-`                "
 					"                        .-:mNdhh:.......--::::-`                    "
 					"                           yNh/..------..`                          "
+					""
+					""
 				];
 			};
 		};
