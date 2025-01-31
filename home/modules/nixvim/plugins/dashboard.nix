@@ -8,16 +8,6 @@
 				statusline = true;
 				tabline = true;
 			};
-			    shortcut = [
-				{
-					key = "f";
-					icon = " ";
-					desc = "Files";
-					group = "Label";
-					icon_hl = "@variable";
-					action.__raw = "function(path) vim.cmd('Telescope find_files') end";
-				}
-			];
 			config = {
 				mru.limit = 5;
 				project.enable = false;
@@ -34,6 +24,16 @@
 					"╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝"
 					""
 					""
+				];
+				shortcut = [
+					{
+						key = "f";
+						icon = " ";
+						desc = "Files";
+						group = "Label";
+						icon_hl = "@variable";
+						action.__raw = "function(path) vim.cmd('Telescope find_files') end";
+					}
 				];
 			};
 		};
