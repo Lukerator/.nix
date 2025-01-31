@@ -21,7 +21,7 @@
 			config = {
 				mru.limit = 5;
 				project.enable = false;
-				footer = "Make cool shit";
+				footer = [ "Make cool shit" ];
 				header = [
 					"███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗"
 					"████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║"
