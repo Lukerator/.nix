@@ -14,15 +14,10 @@
 				"<CR>" = "cmp.mapping.confirm { select = true }";
 			};
 			sources = [
-				{
-					name = "luasnip";
-				}
-				{
-					name = "nvim_lsp";
-				}
-				{
-					name = "path";
-				}
+				{ name = "path"; }
+				{ name = "buffer"; }
+				{ name = "luasnip"; }
+				{ name = "nvim_lsp"; }
 			];
 		};
 	};
