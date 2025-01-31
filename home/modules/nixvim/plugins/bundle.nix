@@ -3,6 +3,7 @@
 		./barbar.nix
 		./basic.nix
 		./conform.nix
+		./dashboard.nix
 		./lsp.nix
 		./lualine.nix
 		./neotree.nix
