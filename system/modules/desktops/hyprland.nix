@@ -17,7 +17,7 @@
 		enable = true;
 		libinput = {
 			enable = true;
-			tapping.enable = true;
+			touchpad.tapping = true;
 		};
 		displayManager.gdm = {
 			enable = true;
