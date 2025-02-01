@@ -4,13 +4,24 @@
 		enable = true; # Enables Hyprland as a Window Manager/Desktop Environment
 		withUWSM = false;
 	};
-	services = {
+	/*services = {
 		xserver.enable = true;
 		displayManager.sddm = {
 			enable = true; # Enables SDDM - see ./plasma.nix
 			#wayland.enable = true; # Enables Wayland on SDDM
 			theme = "catppuccin-mocha"; # Sets SDDM theme
 			package = pkgs.kdePackages.sddm; # Enables Qt6
+		};
+	};*/
+	services.xserver = {
+		enable = true;
+		libinput = {
+			enable = true;
+			tapping.enable = true;
+		};
+		displayManager.gdm = {
+			enable = true;
+			wayland = true;
 		};
 	};
 	environment = {
