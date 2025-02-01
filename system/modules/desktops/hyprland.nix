@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
 	programs.hyprland = {
 		enable = true; # Enables Hyprland as a Window Manager/Desktop Environment
@@ -13,15 +12,17 @@
 			package = pkgs.kdePackages.sddm; # Enables Qt6
 		};
 	};*/
-	services.xserver = {
-		enable = true;
+	services = {
 		libinput = {
 			enable = true;
 			touchpad.tapping = true;
 		};
-		displayManager.gdm = {
+		xserver = {
 			enable = true;
-			wayland = true;
+			displayManager.gdm = {
+				enable = true;
+				wayland = true;
+			};
 		};
 	};
 	environment = {
