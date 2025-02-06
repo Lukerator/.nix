@@ -12,7 +12,6 @@
 				"lua"
 				"nix"
 				"typst"
-				"pascal"
 				"python"
 				"markdown"
 			];
