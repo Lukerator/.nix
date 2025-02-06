@@ -12,7 +12,6 @@
 		evince
 		fastfetch
 		file-roller
-		fpc
 		fuzzel
 		git
 		gh
