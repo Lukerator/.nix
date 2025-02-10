@@ -32,7 +32,6 @@
 		protonup-qt
 		python3
 		qbittorrent-enhanced
-		reversal-icon-theme
 		syncthing
 		swaybg
 		swaynotificationcenter
