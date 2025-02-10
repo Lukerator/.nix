@@ -26,13 +26,12 @@
 		nautilus-open-any-terminal
 		nautilus-python
 		neovide
-		ollama-cuda
-		open-webui
 		p7zip-rar
 		prismlauncher
 		polkit_gnome
 		polychromatic
 		protonup-qt
+		python3
 		qbittorrent-enhanced
 		retroarch
 		reversal-icon-theme
