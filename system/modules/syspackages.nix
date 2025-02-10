@@ -32,7 +32,6 @@
 		protonup-qt
 		python3
 		qbittorrent-enhanced
-		retroarch
 		reversal-icon-theme
 		syncthing
 		swaybg
