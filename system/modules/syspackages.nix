@@ -8,7 +8,6 @@
 		catppuccin-sddm
 		crawlTiles
 		dtrx
-		emulationstation-de
 		evince
 		fastfetch
 		file-roller
