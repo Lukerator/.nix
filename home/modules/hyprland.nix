@@ -35,7 +35,7 @@
 				"swaync"
 				"swayosd-server"
 				"swaybg -i ~/Pictures/background.png"
-				"killall -q waybar;sleep .5 && waybar"
+				"killall -q waybar;sleep 1 && waybar"
 				"${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
 			]; # Background Startup programs
 			bindel = [
