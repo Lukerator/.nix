@@ -52,7 +52,7 @@
 				repeat_delay = 300; # Sets the repeat delay
 				follow_mouse = true; # sets focus to follow mouse
 				#force_no_accel = true; # Disables acceleration
-				kb_layout = "us, ro"; # Sets keyboard language and layout
+				kb_layout = "ro"; # Sets keyboard language and layout
 				touchpad.natural_scroll = true; # Enables natural scroll
 				kb_options = "grp:win_space_toggle"; # Sets the layout switching keybind
 			};

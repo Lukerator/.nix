@@ -1,7 +1,7 @@
 {
 	programs.nixvim.plugins = {
 		fidget.enable = true;
-		markview.enable = true;
+		#markview.enable = true;
 		typst-vim.enable = true;
 		which-key.enable = true;
 		cmp-nvim-lsp.enable = true;
