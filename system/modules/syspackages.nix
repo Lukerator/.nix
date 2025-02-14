@@ -12,10 +12,10 @@
 		fastfetch
 		file-roller
 		fuzzel
+		gcc
 		git
 		gh
 		home-manager
-		libgcc
 		localsend
 		lsd
 		lua
