@@ -15,6 +15,7 @@
 		git
 		gh
 		home-manager
+		libgcc
 		localsend
 		lsd
 		lua
