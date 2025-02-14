@@ -13,6 +13,12 @@
 				"<S-Tab>" = "cmp.mapping.select_prev_item()";
 				"<CR>" = "cmp.mapping.confirm { select = true }";
 			};
+			window = {
+				documentation = "cmp.config.window.bordered()";
+				completion = "cmp.config.window.bordered({
+					winhighlight = 'Normal:CmpPmenu,CursorLine:PmenuSel,Search:None'
+				})";
+			};
 			sources = [
 				{ name = "path"; }
 				{ name = "buffer"; }
