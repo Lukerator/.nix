@@ -43,7 +43,7 @@
 			breakindent = true; # Enable break indent
 			cursorcolumn = false; # Highlight the current column
 			inccommand = "split"; # Show the effects of a command incrementally in a split window
-			relativenumber = false; # Show relative line numbers
+			relativenumber = true; # Show relative line numbers
 			listchars.__raw = "{ tab = '» ', trail = '·' }"; # Define list characters for tabs and trailing spaces
 			clipboard = {
 				register = "unnamedplus"; # Use the '+' register for clipboard
