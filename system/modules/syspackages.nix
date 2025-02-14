@@ -4,9 +4,6 @@
 		angband
 		brightnessctl
 		calibre
-		cataclysm-dda
-		catppuccin-sddm
-		crawlTiles
 		dtrx
 		evince
 		fastfetch
@@ -15,6 +12,7 @@
 		gcc
 		git
 		gh
+		godot_4
 		home-manager
 		localsend
 		lsd
