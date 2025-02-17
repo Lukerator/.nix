@@ -9,26 +9,8 @@
 				end
 			'';
 			window = {
-				completion.border = [
-					""
-					""
-					""
-					""
-					""
-					""
-					""
-					""
-				];
-				documentation.border = [
-					""
-					""
-					""
-					""
-					""
-					""
-					""
-					""
-				];
+				completion.border = "rounded";
+				documentation.border = "rounded";
 			};
 			mapping = {
 				"<Tab>" = "cmp.mapping.select_next_item()";
