@@ -112,7 +112,6 @@
 				"$mod, left, movefocus, l"
 				"$mod, right, movefocus, r"
 
-
 				"$mod SHIFT, up, movewindow, u"
 				"$mod SHIFT, down, movewindow, d"
 				"$mod SHIFT, left, movewindow, l"
@@ -157,8 +156,8 @@
 				"$mod SHIFT, code:20, movetoworkspace, -1"
 				"$mod SHIFT, code:21, movetoworkspace, +1"
 
-				"$mod SHIFT, x, exec, wlogout"
-				"$mod SHIFT, l, exec, swaylock -c 282828 --ring-color 282828 --hide-keyboard-layout --separator-color 282828 --inside-color 282828 --key-hl-color 80AA9E --ring-ver-color 282828 --line-ver-color 282828 --line-color 282828 --inside-ver-color 282828 --layout-text-color 282828 --text-ver-color 282828"
+				#"$mod SHIFT, x, exec, wlogout"
+				#"$mod SHIFT, l, exec, swaylock -c 282828 --ring-color 282828 --hide-keyboard-layout --separator-color 282828 --inside-color 282828 --key-hl-color 80AA9E --ring-ver-color 282828 --line-ver-color 282828 --line-color 282828 --inside-ver-color 282828 --layout-text-color 282828 --text-ver-color 282828"
 			]; # Common binds
 		};
 	};
