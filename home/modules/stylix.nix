@@ -10,7 +10,7 @@
 			addCss = true;
 		};
 		image = /home/luke/.nix/home/modules/background/background.png; # Sets wallpaper image
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-		#base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml"; # Sets color scheme
+		#base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml"; # Sets color scheme
 	};
 }
