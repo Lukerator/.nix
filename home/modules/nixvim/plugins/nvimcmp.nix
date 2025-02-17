@@ -8,14 +8,32 @@
 					require('luasnip').lsp_expand(args.body)
 				end
 			'';
+			window = {
+				completion.border = [
+					""
+					""
+					""
+					""
+					""
+					""
+					""
+					""
+				];
+				documentation.border = [
+					""
+					""
+					""
+					""
+					""
+					""
+					""
+					""
+				];
+			};
 			mapping = {
 				"<Tab>" = "cmp.mapping.select_next_item()";
 				"<S-Tab>" = "cmp.mapping.select_prev_item()";
 				"<CR>" = "cmp.mapping.confirm { select = true }";
-			};
-			window = {
-				documentation.border = [ "cmp.config.window.bordered()" ];
-				completion.border = [ "cmp.config.window.bordered({ winhighlight = 'Normal:CmpPmenu,CursorLine:PmenuSel,Search:None' })" ];
 			};
 			sources = [
 				{ name = "path"; }
