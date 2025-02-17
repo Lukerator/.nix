@@ -28,7 +28,7 @@
 		opts = {
 			mouse = "a"; # Enable mouse support in all modes
 			list = true; # Enable display of list characters
-			scrolloff = 20; # Minimum lines to keep above and below the cursor
+			scrolloff = 15; # Minimum lines to keep above and below the cursor
 			number = true; # Show line numbers
 			hlsearch = true; # Highlight search matches
 			showmode = true; # Do not show mode in command line
