@@ -4,5 +4,6 @@
 		#HYPRCURSOR_SIZE = "24"; # Sets Hyprcursor size
 		FLAKE = "/home/luke/.nix/"; # Sets the flake location
 		#QT_QPA_PLATFORMTHEME = lib.mkForce "qt6ct"; # Sets the Qt theme to qt6ct
+		NIXPKGS_ALLOW_UNFREE = true;
 	};
 }
