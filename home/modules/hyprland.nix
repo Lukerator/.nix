@@ -125,7 +125,7 @@
 				"$mod, q, killactive"
 				"$mod, d, exec, fuzzel"
 				"$mod, l, exec, lutris"
-				"$mod, w, exec, firefox"
+				"$mod, w, exec, zen-twilight"
 				"$mod, c, exec, neovide"
 				"$mod, e, exec, nautilus"
 				"$mod, return, exec, kitty"

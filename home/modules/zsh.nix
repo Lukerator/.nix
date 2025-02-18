@@ -8,15 +8,6 @@
 			enable = true; # Enables oh-my-zsh
 			theme = "robbyrussell"; # Sets oh-my-zsh theme
 		};
-		initExtra = ''
-neovidexit () {
-	neovide "$@" &
-	pid=$!
-	exit
-	wait $pid
-	kitty &
-}
-		'';
 		shellAliases = {
 			ls = "lsd";
 			clear = "clear && printf '\E[H\E[3J' && clear";
