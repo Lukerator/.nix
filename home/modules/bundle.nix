@@ -1,6 +1,5 @@
 {
 	imports = [
-		./nixvim/bundle.nix
 		./fuzzel.nix
 		./home.nix
 		./hyprland.nix
@@ -10,5 +9,6 @@
 		./tmux.nix
 		./waybar.nix
 		./zsh.nix
+		./nixvim/bundle.nix
 	];
 }
