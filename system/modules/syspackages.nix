@@ -4,7 +4,6 @@
 		angband
 		brightnessctl
 		calibre
-		codeium
 		dtrx
 		evince
 		fastfetch
