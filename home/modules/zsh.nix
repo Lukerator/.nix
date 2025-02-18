@@ -4,6 +4,12 @@
 		enableCompletion = true; # Enables completion
 		autosuggestion.enable = false; # Disables suggestions
 		syntaxHighlighting.enable = true; # Enables syntax highlighting
+		programs.zsh.initExtra = ''
+			neovidexit () {
+				neovide "$@" && kitty &
+				exit
+			}
+		'';
 		oh-my-zsh = {
 			enable = true; # Enables oh-my-zsh
 			theme = "robbyrussell"; # Sets oh-my-zsh theme
