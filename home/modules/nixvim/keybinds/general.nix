@@ -10,5 +10,10 @@
 			key = "<down>";
 			mode = [ "n" "v" ];
 		}
+		{
+			key = "<leader>e";
+			mode = [ "n" "v" ];
+			action = "vim.diagnostic.open_float";
+		}
 	];
 }

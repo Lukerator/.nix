@@ -4,6 +4,7 @@
 	inputs = {
 		stylix.url = "github:danth/stylix"; # Sets the stylix channel
 		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Sets the nix-packages channel
+		zen-browser.url = "github:0xc000022070/zen-browser-flake"; # Sets the zen-browser channel
 		nixvim = {
 			url = "github:nix-community/nixvim"; # Sets the nixvim channel
 			inputs.nixpkgs.follows = "nixpkgs"; # Sets the versioning of the home-manager to the nix-packages one
@@ -14,7 +15,7 @@
 		};
 	};
 
-	outputs = { nixpkgs, home-manager, nixvim, stylix, ... }:
+	outputs = { nixpkgs, home-manager, nixvim, stylix, zen-browser, ... }@inputs:
 	let
 		system = "x86_64-linux";
 	in {
