@@ -1,7 +1,8 @@
 {
 	programs.waybar = {
 		enable = true;
-		style = builtins.readFile ./waybar/style.css;
+		#style = builtins.readFile ./waybar/style-cat.css;
+		style = builtins.readFile ./waybar/style-gruv.css;
 		settings = [{
 			layer = "top";
 			position = "top";
