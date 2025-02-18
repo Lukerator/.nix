@@ -10,8 +10,11 @@
 		};
 		initExtra = ''
 neovidexit () {
-	neovide "$@" && kitty & disown
+	neovide "$@" &
+	pid=$!
 	exit
+	wait $pid
+	kitty &
 }
 		'';
 		shellAliases = {
