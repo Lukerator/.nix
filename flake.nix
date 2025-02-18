@@ -21,7 +21,7 @@
 	in {
 		nixosConfigurations.Luke-PC =  nixpkgs.lib.nixosSystem {
 			inherit system; # Gets the amd64 version of packages
-			inherit inputs;
+			#inherit inputs;
 			modules = [ stylix.nixosModules.stylix ./system/system.nix ]; # Selects main config file
 		};
 		homeConfigurations.luke = home-manager.lib.homeManagerConfiguration {
