@@ -10,7 +10,7 @@
 		};
 		initExtra = ''
 neovidexit () {
-	neovide "$@" && kitty &
+	neovide "$@" && kitty & disown
 	exit
 }
 		'';
