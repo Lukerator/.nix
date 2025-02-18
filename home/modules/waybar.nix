@@ -48,7 +48,7 @@
 				on-click = "kitty nmtui";
 			};
 			clock = {
-				format = "  {:%H:%M  %m/%d} ";
+				format = "  {:%H:%M  %d/%m} ";
 			};
 			pulseaudio = {
 				format = "{icon} {volume}%";
