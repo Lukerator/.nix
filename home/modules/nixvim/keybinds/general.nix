@@ -13,7 +13,7 @@
 		{
 			key = "<leader>e";
 			mode = [ "n" "v" ];
-			action.__lua = "vim.diagnostic.open_float";
+			action.__raw = "vim.diagnostic.open_float";
 		}
 	];
 }
