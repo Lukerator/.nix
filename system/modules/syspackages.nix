@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, system, ... }:
 {
 	environment.systemPackages = with pkgs; [
 		angband
@@ -43,5 +43,6 @@
 		wlogout
 		wl-clipboard
 		zathura
+		inputs.zen-browser.packages."${system}".specific
 	]; # Installs packages
 }
