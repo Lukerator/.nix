@@ -9,10 +9,10 @@
 			theme = "robbyrussell"; # Sets oh-my-zsh theme
 		};
 		initExtra = ''
-			neovidexit () {
-				neovide "$@" && kitty &
-				exit
-			}
+neovidexit () {
+	neovide "$@" && kitty &
+	exit
+}
 		'';
 		shellAliases = {
 			ls = "lsd";
