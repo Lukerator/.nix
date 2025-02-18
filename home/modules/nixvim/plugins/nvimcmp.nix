@@ -20,6 +20,7 @@
 			sources = [
 				{ name = "path"; }
 				{ name = "buffer"; }
+				{ name = "codeium"; }
 				{ name = "luasnip"; }
 				{ name = "nvim_lsp"; }
 			];

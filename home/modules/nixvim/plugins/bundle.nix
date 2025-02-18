@@ -2,6 +2,7 @@
 	imports = [
 		./barbar.nix
 		./basic.nix
+		./codeium.nix
 		./conform.nix
 		./dashboard.nix
 		./lsp.nix
