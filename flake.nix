@@ -26,6 +26,7 @@
 		};
 		homeConfigurations.luke = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system}; # Gets the amd64 version of packages
+			extraSpecialArgs = { inherit inputs; };
 			modules = [
 				stylix.homeManagerModules.stylix
 				nixvim.homeManagerModules.nixvim
