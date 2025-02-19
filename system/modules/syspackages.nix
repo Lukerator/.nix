@@ -7,6 +7,7 @@
 		dtrx
 		evince
 		fastfetch
+		feh
 		file-roller
 		fuzzel
 		gcc
