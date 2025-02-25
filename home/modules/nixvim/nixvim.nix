@@ -36,7 +36,7 @@
 			ignorecase = true;
 			breakindent = true;
 			relativenumber = true;
-			listchars.__raw = ''{ tab = "» ", trail = "·", nbsp = "␣" , eol = "↩" }'';
+			listchars.__raw = ''{ tab = "» ", trail = "·", nbsp = "␣" }'';
 			clipboard = {
 				register = "unnamedplus";
 				providers.wl-copy.enabled = true;
