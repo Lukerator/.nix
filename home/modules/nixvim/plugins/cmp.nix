@@ -22,7 +22,7 @@
 						else
 							fallback()
 						end
-					end, { "i", "s" }),
+					end, { "i", "s" })
 				'';
 				"<S-Tab>".__raw = ''
 					cmp.mapping(function(fallback)
@@ -33,7 +33,7 @@
 						else
 							fallback()
 						end
-					end, { "i", "s" }),
+					end, { "i", "s" })
 				'';
 				"<CR>".__raw = ''
 					cmp.mapping(function(fallback)
@@ -48,7 +48,7 @@
 						else
 							fallback()
 						end
-					end),
+					end)
 				'';
 			};
 			sources = [
