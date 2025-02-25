@@ -12,8 +12,18 @@
 				completion.border = "rounded";
 				documentation.border = "rounded";
 			};
-			mapping.__raw = ''
-				['<CR>'] = cmp.mapping(function(fallback)
+			sources = [
+				{ name = "path"; }
+				{ name = "buffer"; }
+				{ name = "codeium"; }
+				{ name = "luasnip"; }
+				{ name = "nvim_lsp"; }
+			];
+      luaConfig.post = ''
+      mapping = {
+
+    -- ... Your other mappings ...
+   ['<CR>'] = cmp.mapping(function(fallback)
         if cmp.visible() then
             if luasnip.expandable() then
                 luasnip.expand()
@@ -45,15 +55,8 @@
       else
         fallback()
       end
-    end, { "i", "s" })
-			'';
-			sources = [
-				{ name = "path"; }
-				{ name = "buffer"; }
-				{ name = "codeium"; }
-				{ name = "luasnip"; }
-				{ name = "nvim_lsp"; }
-			];
+    end, { "i", "s" }),
+      '';
 		};
 	};
 }
