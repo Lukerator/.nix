@@ -17,8 +17,8 @@
 			];
 			mapping = {
 				"<CR>".__raw = ''
-					local luasnip = require("luasnip")
 					cmp.mapping(function(fallback)
+						local luasnip = require("luasnip")
 						if cmp.visible() then
 							if luasnip.expandable() then
 								luasnip.expand()
@@ -31,8 +31,8 @@
 					end)
 				'';
 				"<Tab>".__raw = ''
-					local luasnip = require("luasnip")
 					cmp.mapping(function(fallback)
+						local luasnip = require("luasnip")
 						if cmp.visible() then
 							cmp.select_next_item()
 						elseif luasnip.locally_jumpable(1) then
@@ -43,8 +43,8 @@
 					end), { "i", "s" })
 				'';
 				"<S-Tab>".__raw = ''
-					local luasnip = require("luasnip")
 					cmp.mapping(function(fallback)
+						local luasnip = require("luasnip")
 						if cmp.visible() then
 							cmp.select_prev_item()
 						elseif luasnip.locally_jumpable(-1) then
