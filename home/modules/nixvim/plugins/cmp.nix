@@ -16,6 +16,8 @@
 				"<Tab>" = "cmp.mapping.select_next_item()";
 				"<S-Tab>" = "cmp.mapping.select_prev_item()";
 				"<CR>" = "cmp.mapping.confirm { select = true }";
+				"<C-left>" = "ls.jump(-1)";
+				"<C-right>" = "ls.jump(1)";
 			};
 			sources = [
 				{ name = "path"; }
