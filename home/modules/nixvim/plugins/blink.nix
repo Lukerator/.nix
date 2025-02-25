@@ -17,11 +17,13 @@
 			sources = {
 				cmdline = [ ];
 				providers = {
-					lsp = [ ];
-					path = [ ];
-					buffer = [ ];
-					luasnip = [ ];
-					codeium = [ ];
+					lsp = { };
+					path = { };
+					buffer = {
+						score_offset = -7;
+					};
+					luasnip = { };
+					codeium = { };
 				};
 			};
 			keymap = {
