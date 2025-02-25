@@ -4,7 +4,7 @@
 		./basic.nix
 		./cmp.nix
 		./codeium.nix
-		./conform.nix
+		#./conform.nix
 		./dashboard.nix
 		./lsp.nix
 		./lualine.nix

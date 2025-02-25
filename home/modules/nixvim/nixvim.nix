@@ -28,6 +28,7 @@
 		opts = {
 			mouse = "a"; # Enable mouse support in all modes
 			list = true; # Enable display of list characters
+			paste = false; # Disable paste mode
 			number = true; # Show line numbers
 			scrolloff = 10; # Minimum lines to keep above and below the cursor
 			hlsearch = true; # Highlight search matches
