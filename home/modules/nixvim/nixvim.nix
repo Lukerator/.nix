@@ -1,5 +1,5 @@
 {
-	programs.nixviim = {
+	programs.nixvim = {
 		enable = true;
 		defaultEditor = true;
 		globals = {
