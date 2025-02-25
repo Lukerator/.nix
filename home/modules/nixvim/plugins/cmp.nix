@@ -40,7 +40,7 @@
 						else
 							fallback()
 						end
-					end), { "i", "s" }
+					end)
 				'';
 				"<S-Tab>".__raw = ''
 					cmp.mapping(function(fallback)
@@ -52,7 +52,7 @@
 						else
 							fallback()
 						end
-					end), { "i", "s" }
+					end)
 				'';
 			};
 		};
