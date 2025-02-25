@@ -8,8 +8,7 @@
 		./dashboard.nix
 		./lsp.nix
 		./lualine.nix
-		./neotree.nix
-		./obsidian.nix
+		#./neotree.nix
 		./telescope.nix
 		./treesitter.nix
 	];
