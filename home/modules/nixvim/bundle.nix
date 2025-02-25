@@ -1,7 +1,11 @@
 {
 	imports = [
-		./keybinds/bundle.nix
-		./plugins/bundle.nix
+		./keymaps.nix
 		./nixvim.nix
+		./plugins/basic.nix
+		./plugins/blink.nix
+		./plugins/codeium.nix
+		./plugins/conform.nix
+		./plugins/dashboard.nix
 	];
 }

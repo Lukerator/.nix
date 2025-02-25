@@ -1,4 +1,3 @@
-{ config, pkgs, ... }:
 {
 	services = {
 		displayManager.sddm.enable = true; # Enables SDDM - GDM alternative - see ./gnome.nix

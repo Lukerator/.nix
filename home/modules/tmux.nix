@@ -3,7 +3,7 @@
 	programs.tmux = {
 		enable = true; # Enables tmux
 		plugins = with pkgs.tmuxPlugins; [
-			gruvbox
+			catppuccin
 			sensible
 		]; # Enables tmux plugins
 	};

@@ -4,7 +4,7 @@
 	hardware = {
 		graphics.enable = true;
 		nvidia = {
-			open = false;
+			open = true;
 			nvidiaSettings = true;
 			modesetting.enable = true;
 			package = config.boot.kernelPackages.nvidiaPackages.beta;
@@ -13,22 +13,22 @@
 				finegrained = false;
 			};
 			prime = {
-				sync.enable = true;
+				sync.enable = false;
 				intelBusId = "PCI:0:2:0";
 				nvidiaBusId = "PCI:1:0:0";
 				offload = {
-					enable = false;
-					enableOffloadCmd = false;
+					enable = true;
+					enableOffloadCmd = true;
 				};
 			};
 		};
 	};
-	specialisation.battery-saving.configuration = {
+	specialisation.gaming.configuration = {
 		hardware.nvidia.prime = {
-			sync.enable = lib.mkForce false;
+			reverseSync.enable = lib.mkForce true;
 			offload = {
-				enable = lib.mkForce true;
-				enableOffloadCmd = lib.mkForce true;
+				enable = lib.mkForce false;
+				enableOffloadCmd = lib.mkForce false;
 			};
 		};
 	};

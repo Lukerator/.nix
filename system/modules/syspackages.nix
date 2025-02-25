@@ -43,6 +43,9 @@
 		wineWowPackages.wayland
 		wlogout
 		wl-clipboard
+		wl-clipboard-rs
+		wl-clipboard-x11
+		wl-clip-persist
 		zathura
 	]; # Installs packages
 }

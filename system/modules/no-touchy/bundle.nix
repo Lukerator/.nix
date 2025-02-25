@@ -3,9 +3,9 @@
 		./asus.nix
 		./audio.nix
 		./boot.nix
-		./firefox.nix
+		#./firefox.nix
 		./flakes.nix
-		./font.nix
+		#./font.nix
 		./hardware.nix
 		./helper.nix
 		./hostname.nix
