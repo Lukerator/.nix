@@ -13,11 +13,43 @@
 				documentation.border = "rounded";
 			};
 			mapping = {
-				"<Tab>" = "cmp.mapping.select_next_item()";
-				"<S-Tab>" = "cmp.mapping.select_prev_item()";
-				"<CR>" = "cmp.mapping.confirm { select = true }";
-				"<C-left>" = "ls.jump(-1)";
-				"<C-right>" = "ls.jump(1)";
+				"<Tab>".__raw = ''
+					cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.mapping.select_next_item()
+						elseif luasnip.locally_jumpable(1) then
+							luasnip.jump(1)
+						else
+							fallback()
+						end
+					end, { "i", "s" }),
+				'';
+				"<S-Tab>".__raw = ''
+					cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.mapping.select_prev_item()
+						elseif luasnip.locally_jumpable(-1) then
+							luasnip.jump(-1)
+						else
+							fallback()
+						end
+					end, { "i", "s" }),
+				'';
+				"<CR>".__raw = ''
+					cmp.mapping(function(fallback)
+						if cmp.visible() then
+							if luasnip.expandable() then
+								luasnip.expand()
+							else
+								cmp.confirm({
+									select = true,
+								})
+							end
+						else
+							fallback()
+						end
+					end),
+				'';
 			};
 			sources = [
 				{ name = "path"; }
