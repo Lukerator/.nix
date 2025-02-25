@@ -15,5 +15,10 @@
 			mode = [ "n" "v" ];
 			action.__raw = "vim.diagnostic.open_float";
 		}
+		{
+			key = "<C-n>";
+			mode = [ "a" ];
+			action = "<cmd>Oil --float<CR>";
+		}
 	];
 }
