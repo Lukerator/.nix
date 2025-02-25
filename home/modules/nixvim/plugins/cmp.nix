@@ -3,11 +3,7 @@
 		enable = true;
 		settings = {
 			completion.completeopt = "menu,menuone,noinsert"; 
-			snippet.expand = ''
-				function(args)
-					require('luasnip').lsp_expand(args.body)
-				end
-			'';
+			snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
 			window = {
 				completion.border = "rounded";
 				documentation.border = "rounded";
@@ -19,44 +15,46 @@
 				{ name = "luasnip"; }
 				{ name = "nvim_lsp"; }
 			];
-      luaConfig.post = ''
-      mapping = {
-
-    -- ... Your other mappings ...
-   ['<CR>'] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-            if luasnip.expandable() then
-                luasnip.expand()
-            else
-                cmp.confirm({
-                    select = true,
-                })
-            end
-        else
-            fallback()
-        end
-    end),
-
-    ["<Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.locally_jumpable(1) then
-        luasnip.jump(1)
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
-
-    ["<S-Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.locally_jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
-      '';
+			mapping = {
+				"<CR>".__raw = ''
+					local luasnip = require("luasnip")
+					cmp.mapping(function(fallback)
+						if cmp.visible() then
+							if luasnip.expandable() then
+								luasnip.expand()
+							else
+								cmp.confirm({ select = true, })
+							end
+						else
+							fallback()
+						end
+					end)
+				'';
+				"<Tab>".__raw = ''
+					local luasnip = require("luasnip")
+					cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.select_next_item()
+						elseif luasnip.locally_jumpable(1) then
+							luasnip.jump(1)
+						else
+							fallback()
+						end
+					end), { "i", "s" })
+				'';
+				"<S-Tab>".__raw = ''
+					local luasnip = require("luasnip")
+					cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.select_prev_item()
+						elseif luasnip.locally_jumpable(-1) then
+							luasnip.jump(-1)
+						else
+							fallback()
+						end
+					end), { "i", "s" })
+				'';
+			};
 		};
 	};
 }
