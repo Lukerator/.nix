@@ -17,7 +17,7 @@
 		}
 		{
 			key = "<C-n>";
-			mode = [ "a" ];
+			mode = [ "n" "v" ];
 			action = "<cmd>Oil --float<CR>";
 		}
 	];
