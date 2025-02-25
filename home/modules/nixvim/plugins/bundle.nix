@@ -1,13 +1,15 @@
 {
 	imports = [
+		#./barbar.nix
 		./basic.nix
-		#./blink.nix
 		./cmp.nix
 		./codeium.nix
 		./conform.nix
 		./dashboard.nix
 		./lsp.nix
-		./oil.nix
+		./lualine.nix
+		#./neotree.nix
+		./obsidian.nix
 		./telescope.nix
 		./treesitter.nix
 	];

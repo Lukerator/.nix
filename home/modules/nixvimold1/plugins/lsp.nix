@@ -13,7 +13,7 @@
 				{
 					mode = "n";
 					key = "<leader>gd";
-					options.desc = "LSP: [G]oto [D]efinition";
+					options.desc = "Go to definition";
 					action.__raw = "require('telescope.builtin').lsp_definitions";
 				}
 			];

@@ -1,6 +1,6 @@
 {
 	programs.nixvim.plugins.dashboard = {
-                enable = true;
+		enable = true;
 		settings = {
 			theme = "hyper";
 			change_to_vcs_root = true;
@@ -13,7 +13,7 @@
 				project.enable = false;
 				footer = [
 					""
-					"Make cool shit!"
+					"Make cool shit"
 				];
 				header = [
 					"███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗"
@@ -28,14 +28,14 @@
 				shortcut = [
 					{
 						key = "f";
-						icon = "  ";
+						icon = " ";
+						desc = "Files";
 						group = "Label";
-						desc = "Find file";
 						icon_hl = "@variable";
 						action.__raw = "function(path) vim.cmd('Telescope find_files') end";
 					}
 				];
 			};
 		};
-        };
+	};
 }

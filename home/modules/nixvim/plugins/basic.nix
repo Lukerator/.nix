@@ -1,6 +1,7 @@
 {
 	programs.nixvim.plugins = {
 		fidget.enable = true;
+		luasnip.enable = true;
 		markview.enable = true;
 		typst-vim.enable = true;
 		which-key.enable = true;

@@ -16,20 +16,6 @@
 				"<Tab>" = "cmp.mapping.select_next_item()";
 				"<S-Tab>" = "cmp.mapping.select_prev_item()";
 				"<CR>" = "cmp.mapping.confirm { select = true }";
-				"<S-left>" = ''
-					cmp.mapping(function()
-						if luasnip.jumpable(-1) then
-							luasnip.jump(-1)
-						end
-					end, { 'i', 's' })
-				'';
-				"<S-right>" = ''
-					cmp.mapping(function()
-						if luasnip.jumpable(1) then
-							luasnip.jump(1)
-						end
-					end, { 'i', 's' })
-				'';
 			};
 			sources = [
 				{ name = "path"; }

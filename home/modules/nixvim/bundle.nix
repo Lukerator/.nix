@@ -1,7 +1,7 @@
 {
 	imports = [
-		./keymaps.nix
-		./nixvim.nix
+		./keybinds/bundle.nix
 		./plugins/bundle.nix
+		./nixvim.nix
 	];
 }
