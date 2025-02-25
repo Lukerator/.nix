@@ -1,5 +1,6 @@
 {
 	programs.nixvim.plugins = {
+		oil.enable = true;
 		fidget.enable = true;
 		luasnip.enable = true;
 		markview.enable = true;
