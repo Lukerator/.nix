@@ -14,7 +14,7 @@
 			};
 			mapping = {
 				"<Tab>".__raw = ''
-					cmp.mapping(function(fallback)
+					function()
 						if cmp.visible() then
 							cmp.mapping.select_next_item()
 						elseif luasnip.locally_jumpable(1) then
@@ -22,10 +22,10 @@
 						else
 							fallback()
 						end
-					end, { "i", "s" })
+					end
 				'';
 				"<S-Tab>".__raw = ''
-					cmp.mapping(function(fallback)
+					function()
 						if cmp.visible() then
 							cmp.mapping.select_prev_item()
 						elseif luasnip.locally_jumpable(-1) then
@@ -33,10 +33,10 @@
 						else
 							fallback()
 						end
-					end, { "i", "s" })
+					end
 				'';
 				"<CR>".__raw = ''
-					cmp.mapping(function(fallback)
+					function()
 						if cmp.visible() then
 							if luasnip.expandable() then
 								luasnip.expand()
@@ -48,7 +48,7 @@
 						else
 							fallback()
 						end
-					end)
+					end
 				'';
 			};
 			sources = [
