@@ -4,7 +4,7 @@
 			mode = "n";
 			key = "<leader>gc";
 			options.desc = "[G]enerate and run [C]++ file";
-			action = ''<cmd>FloatermNew --cmd="clear && g++ -o out % && ./out && rm ./out<CR>i"'';
+			action = ''<cmd>FloatermNew --cmd="g++ -o out % && ./out && rm ./out<CR>i"'';
 		}
 		{
 			mode = "n";
