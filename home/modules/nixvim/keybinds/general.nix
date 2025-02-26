@@ -18,7 +18,7 @@
 		{
 			key = "<C-n>";
 			mode = [ "n" "v" ];
-			action = "<cmd>Oil --float ./<CR>";
+			action = "<cmd>Oil --float %:p:h<CR>";
 		}
 	];
 }

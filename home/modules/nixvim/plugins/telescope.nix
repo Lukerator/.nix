@@ -61,7 +61,7 @@
 						)
 					end
 				'';
-				options.desc = "[/] Fuzzily search in current buffer";
+				options.desc = "Fuzzily search in current buffer";
 			}
 		];
 	};

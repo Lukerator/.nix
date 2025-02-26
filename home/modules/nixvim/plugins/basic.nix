@@ -1,6 +1,6 @@
 {
 	programs.nixvim.plugins = {
-		#fidget.enable = true;
+		# fidget.enable = true;
 		comment.enable = true;
 		dropbar.enable = true;
 		luasnip.enable = true;
@@ -10,7 +10,7 @@
 		cmp-nvim-lsp.enable = true;
 		web-devicons.enable = true;
 		nvim-autopairs.enable = true;
-		#indent-blankline.enable = true;
+		# indent-blankline.enable = true;
 		rainbow-delimiters.enable = true;
 	};
 }

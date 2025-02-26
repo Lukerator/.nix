@@ -10,14 +10,14 @@
 				max_width = 80;
 			};
 			win_options = {
-				concealcursor = "ncv";
-				conceallevel = 3;
-				cursorcolumn = false;
-				foldcolumn = "0";
-				list = false;
-				signcolumn = "no";
-				spell = false;
 				wrap = false;
+				list = false;
+				spell = false;
+				conceallevel = 3;
+				foldcolumn = "0";
+				signcolumn = "no";
+				cursorcolumn = false;
+				concealcursor = "ncv";
 			};
 		};
 	};
