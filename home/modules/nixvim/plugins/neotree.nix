@@ -8,7 +8,7 @@
 			{
 				key = "<C-n>";
 				mode = [ "n" ] ;
-				action = "<cmd>Neotree float %:p:r toggle reveal<CR>";
+				action = "<cmd>Neotree float %:p:h toggle reveal<CR>";
 			}
 		];
 	};
