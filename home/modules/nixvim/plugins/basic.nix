@@ -8,7 +8,6 @@
 		markview.enable = true;
 		typst-vim.enable = true;
 		which-key.enable = true;
-		bufferline.enable = true;
 		cmp-nvim-lsp.enable = true;
 		web-devicons.enable = true;
 		nvim-autopairs.enable = true;
