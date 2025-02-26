@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
-		angband
 		brightnessctl
 		calibre
 		dtrx
@@ -21,7 +20,6 @@
 		lua
 		lutris
 		mame-tools
-		nethack
 		nautilus
 		nautilus-open-any-terminal
 		nautilus-python
