@@ -2,6 +2,8 @@
 	programs.nixvim = {
 		plugins.neo-tree = {
 			enable = true;
+			window.height = 10;
+			popupBorderStyle = "rounded";
 			filesystem.hijackNetrwBehavior = "open_current";
 		};
 		keymaps = [
