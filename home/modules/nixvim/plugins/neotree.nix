@@ -2,7 +2,7 @@
 	programs.nixvim = {
 		plugins.neo-tree = {
 			enable = true;
-			window.height = 10;
+			window.height = 5;
 			popupBorderStyle = "rounded";
 			filesystem.hijackNetrwBehavior = "open_current";
 		};
