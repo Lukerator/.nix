@@ -103,6 +103,9 @@
 				]; # Applies Bezier curves to animations
 			};
 			bind = [
+				"$mod, p, exec, hyprshot -m output"
+				"$mod SHIFT, p, exec, hyprshot -m region"
+
 				"$mod, f, fullscreen"
 				"$mod, v, togglefloating"
 				"$mod, tab, focuscurrentorlast"

@@ -15,6 +15,7 @@
 		gh
 		godot_4
 		home-manager
+		hyprshot
 		localsend
 		lsd
 		lua
