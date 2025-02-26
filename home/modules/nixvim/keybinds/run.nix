@@ -4,19 +4,19 @@
 			mode = "n";
 			key = "<leader>gc";
 			options.desc = "[G]enerate and run [C]++ file";
-			action = '':FloatermNew clear && g++ -o out % && ./out && rm ./out<CR>i'';
+			action = '':FloatermNew clear && g++ -o out % && ./out && rm ./out<CR>'';
 		}
 		{
 			mode = "n";
 			key = "<leader>gl";
 			options.desc = "[G]o [L]ua file";
-			action = '':FloatermNew clear && lua %<CR>i'';
+			action = '':FloatermNew clear && lua %<CR>'';
 		}
 		{
 			mode = "n";
 			key = "<leader>gp";
 			options.desc = "[G]o [P]ython file";
-			action = '':FloatermNew clear && python3 %<CR>i'';
+			action = '':FloatermNew clear && python3 %<CR>'';
 		}
 		{
 			mode = "n";
