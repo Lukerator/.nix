@@ -6,7 +6,7 @@
 			filesystem.hijackNetrwBehavior = "open_current";
 			window.popup.size = {
 				width = "40%";
-				height = "40%";
+				height = "50%";
 			};
 		};
 		keymaps = [
