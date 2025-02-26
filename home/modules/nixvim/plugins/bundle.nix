@@ -7,8 +7,8 @@
 		./dashboard.nix
 		./lsp.nix
 		./lualine.nix
-		#./neotree.nix
-		./oil.nix
+		./neotree.nix
+		#./oil.nix
 		./telescope.nix
 		./treesitter.nix
 		#./conform.nix

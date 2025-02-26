@@ -8,12 +8,7 @@
 			{
 				key = "<C-n>";
 				mode = [ "n" ] ;
-				action = "<cmd>Neotree toggle<CR>";
-			}
-			{
-				key = "<C-h>";
-				mode = [ "n" ];
-				action = "<cmd>Neotree focus<CR>";
+				action = "<cmd>Neotree action=focus dir=%:p:r toggle=true reveal=true<CR>";
 			}
 		];
 	};
