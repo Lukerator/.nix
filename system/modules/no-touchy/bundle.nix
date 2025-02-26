@@ -5,7 +5,7 @@
 		./boot.nix
 		#./firefox.nix
 		./flakes.nix
-		#./font.nix
+		./font.nix
 		./hardware.nix
 		./helper.nix
 		./hostname.nix
