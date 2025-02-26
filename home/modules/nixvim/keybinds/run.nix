@@ -20,6 +20,12 @@
 		}
 		{
 			mode = "n";
+			key = "<leader>gh";
+			options.desc = "[G]o [H]tml file";
+			action = ":! zen-twilight % &<CR><CR>";
+		}
+		{
+			mode = "n";
 			key = "<leader>gt";
 			options.desc = "[G]o [T]ypst file";
 			action = ":! typst %<CR><CR>";
