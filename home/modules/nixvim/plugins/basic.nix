@@ -1,6 +1,8 @@
 {
 	programs.nixvim.plugins = {
 		#fidget.enable = true;
+		comment.enable = true;
+		dropbar.enable = true;
 		luasnip.enable = true;
 		markview.enable = true;
 		typst-vim.enable = true;
