@@ -48,7 +48,7 @@
 					};
 				};
 				adapters.servers.lldb = {
-					host = "127.0.0.1";
+					host = "localhost";
 					port = 8123;
 					executable = {
 						command = "${pkgs.lldb}/bin/lldb";
