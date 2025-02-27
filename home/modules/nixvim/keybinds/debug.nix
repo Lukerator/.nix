@@ -2,7 +2,7 @@
 	programs.nixvim.keymaps = [
 		{
 			mode = "n";
-			key = "<C-F1>";
+			key = "<leader>di";
 			options.desc = "Debug: Step Into";
 			action.__raw = ''
 				function()
@@ -12,7 +12,7 @@
 		}
 		{
 			mode = "n";
-			key = "<C-F2>";
+			key = "<leader>do";
 			options.desc = "Debug: Step Over";
 			action.__raw = ''
 				function()
@@ -22,7 +22,7 @@
 		}
 		{
 			mode = "n";
-			key = "<C-F3>";
+			key = "<leader>du";
 			options.desc = "Debug: Step Out";
 			action.__raw = ''
 				function()
@@ -32,7 +32,7 @@
 		}
 		{
 			mode = "n";
-			key = "<C-F5>";
+			key = "<leader>dc";
 			options.desc = "Debug: Start/Continue";
 			action.__raw = ''
 				function()
@@ -42,7 +42,7 @@
 		}
 		{
 			mode = "n";
-			key = "<C-F7>";
+			key = "<leader>dl";
 			options.desc = "Debug: See last session result.";
 			action.__raw = ''
 				function()
@@ -62,7 +62,7 @@
 		}
 		{
 			mode = "n";
-			key = "<leader>dB";
+			key = "<leader>ds";
 			options.desc = "Debug: Set Breakpoint";
 			action.__raw = ''
 				function()
