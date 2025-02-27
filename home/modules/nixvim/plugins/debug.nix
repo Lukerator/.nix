@@ -1,6 +1,27 @@
 {
 	programs.nixvim.plugins = {
 		dap-lldb.enable = true;
+		dap-ui = {
+			enable = true;
+			settings = {
+				icons = {
+					expanded = "▾";
+					collapsed = "▸";
+					current_frame = "*";
+				};
+				controls.icons = {
+					play = "▶";
+					pause = "⏸";
+					step_into = "⏎";
+					step_out = "⏮ ";
+					run_last = "▶▶";
+					terminate = "⏹";
+					disconnect = "⏏";
+					step_over = "⏭ ";
+					step_back = "⥢ ";
+				};
+			};
+		};
 		dap = {
 			enable = true;
 			configurations = {
@@ -50,27 +71,6 @@
 						'';
 					}
 				];
-			};
-		};
-		dap-ui = {
-			enable = true;
-			settings = {
-				icons = {
-					expanded = "▾";
-					collapsed = "▸";
-					current_frame = "*";
-				};
-				controls.icons = {
-					play = "▶";
-					pause = "⏸";
-					step_into = "⏎";
-					step_out = "⏮ ";
-					run_last = "▶▶";
-					terminate = "⏹";
-					disconnect = "⏏";
-					step_over = "⏭ ";
-					step_back = "⥢ ";
-				};
 			};
 		};
 	};
