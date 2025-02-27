@@ -33,6 +33,13 @@
 			};
 			dap = {
 				enable = true;
+				adapters.servers.lldb = {
+					host = "localhost";
+					port = 8123;
+					executable = {
+						command = "${pkgs.lldb}/bin/lldb-dap";
+					};
+				};
 				signs = {
 					dapBreakpoint = {
 						text = "●";
@@ -45,13 +52,6 @@
 					dapLogPoint = {
 						text = "◆";
 						texthl = "DapLogPoint";
-					};
-				};
-				adapters.servers.lldb = {
-					host = "localhost";
-					port = 8123;
-					executable = {
-						command = "${pkgs.lldb}/bin/lldb";
 					};
 				};
 				configurations = {
