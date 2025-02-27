@@ -8,6 +8,7 @@
 				previous.key = "<S-Tab>";
 			};
 			settings.icons = {
+				preset = null;
 				button = null;
 				pinned = null;
 				inactive = null;
