@@ -62,8 +62,9 @@
 					lualine_a = [{
 						__unkeyed1 = "buffers";
 					}];
+					ccolorscheme = "catppuccin_mocha";
 				};
-				winbar = {
+				/* winbar = {
 					lualine_c = [{ __unkeyed-1 = "navic"; }];
 					lualine_x = [{
 						path = 2;
@@ -71,7 +72,7 @@
 						newfile_status = true;
 						__unkeyed1 = "filename";
 					}];
-				};
+				}; */
 			};
 		};
 	};
