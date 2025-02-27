@@ -1,7 +1,7 @@
 {
 	programs.nixvim.plugins = {
 		barbar = {
-			enable = true;
+			enable = false;
 			keymaps = {
 				next.key = "<Tab>";
 				close.key = "<leader>x";
@@ -61,12 +61,11 @@
 					lualine_z = [ "tabs" ];
 					lualine_a = [{
 						__unkeyed1 = "buffers";
-
 					}];
 				};
 				winbar = {
 					lualine_c = [{
-						path = 10;
+						path = 2;
 						newfile_status = true;
 						__unkeyed1 = "filename";
 					}];
