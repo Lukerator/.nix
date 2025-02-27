@@ -3,7 +3,7 @@
 		fidget.enable = false;
 		comment.enable = true;
 		luasnip.enable = true;
-		dropbar.enable = false;
+		dropbar.enable = true;
 		floaterm.enable = true;
 		markview.enable = true;
 		typst-vim.enable = true;

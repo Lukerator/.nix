@@ -1,7 +1,7 @@
 {
 	programs.nixvim.plugins = {
 		barbar = {
-			enable = false;
+			enable = true;
 			keymaps = {
 				next.key = "<Tab>";
 				close.key = "<leader>x";
@@ -57,22 +57,6 @@
 						'';
 					}];
 				};
-				tabline = {
-					lualine_z = [ "tabs" ];
-					lualine_a = [{
-						__unkeyed1 = "buffers";
-					}];
-					color = "#1E1E2E";
-				};
-				/* winbar = {
-					lualine_c = [{ __unkeyed-1 = "navic"; }];
-					lualine_x = [{
-						path = 2;
-						shorting_target = 40;
-						newfile_status = true;
-						__unkeyed1 = "filename";
-					}];
-				}; */
 			};
 		};
 	};
