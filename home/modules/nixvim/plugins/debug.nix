@@ -38,6 +38,7 @@
 					port = 8123;
 					executable = {
 						command = "${pkgs.lldb}/bin/lldb-dap";
+						args = { port = "8123"; };
 					};
 				};
 				signs = {
