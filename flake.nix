@@ -16,7 +16,7 @@
 		};
 	};
 
-	outputs = { nixpkgs, home-manager, nixvim, stylix, nixCats, ... }@inputs:
+	outputs = { nixpkgs, home-manager, nixvim, stylix, ... }@inputs:
 	let
 		system = "x86_64-linux";
 	in {
@@ -29,7 +29,6 @@
 			pkgs = nixpkgs.legacyPackages.${system}; # Gets the amd64 version of packages
 			extraSpecialArgs = { inherit inputs; system = "x86_64-linux"; };
 			modules = [
-				nixCats.homeManagerModules.nixCats
 				stylix.homeManagerModules.stylix
 				nixvim.homeManagerModules.nixvim
 				./home/home.nix
