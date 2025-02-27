@@ -64,14 +64,14 @@
 							symbols.alternate_file = "";
 					}];
 				};
-				winbar = {
+				/* winbar = {
 					lualine_c = [{
 						path = 3;
 						shorting_target = 150;
 						newfile_status = true;
 						__unkeyed1 = "filename";
 					}];
-				};
+				}; */
 			};
 		};
 	};
