@@ -7,20 +7,7 @@
 				close.key = "<leader>x";
 				previous.key = "<S-Tab>";
 			};
-			settings.icons = {
-				button = "​";
-				pinned = "​";
-				modified = "​";
-				inactive.separator = {
-					left = "​";
-					right = "​";
-				};
-				gitsigns = {
-					added.enabled = false;
-					changed.enabled = false;
-					deleted.enabled = false;
-				};
-			};
+			settings.icons.preset = "slanted";
 		};
 		bullets = {
 			enable = true;
