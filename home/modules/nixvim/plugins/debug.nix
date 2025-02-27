@@ -47,7 +47,7 @@
 						texthl = "DapLogPoint";
 					};
 				};
-				adapters.servers.codelldb = {
+				adapters.servers.lldb = {
 					host = "127.0.0.1";
 					port = 8123;
 					executable = {
