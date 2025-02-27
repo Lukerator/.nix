@@ -34,11 +34,10 @@
 			dap = {
 				enable = true;
 				adapters.servers.lldb = {
-					host = "localhost";
-					port = 8123;
+					port = 13000;
 					executable = {
 						command = "${pkgs.lldb}/bin/lldb-dap";
-						args = [ "--port" "8123" ];
+						args = [ "--port" "13000" ];
 					};
 				};
 				signs = {
