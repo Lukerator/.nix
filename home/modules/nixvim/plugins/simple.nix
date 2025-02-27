@@ -61,11 +61,7 @@
 					lualine_z = [ "tabs" ];
 					lualine_a = [{
 						__unkeyed1 = "buffers";
-						buffer_index = true;
-						color = {
-							active = "TabLineSel";
-							inactive = "TabLine";
-						};
+
 					}];
 				};
 				winbar = {
