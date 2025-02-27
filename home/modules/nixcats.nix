@@ -1,0 +1,5 @@
+{
+	nixCats = {
+		enable = true;
+	};
+}

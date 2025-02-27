@@ -3,6 +3,7 @@
 
 	inputs = {
 		stylix.url = "github:danth/stylix"; # Sets the stylix channel
+		nixCats.url = "github:BirdeeHub/nixCats-nvim"; # Sets the nixCats channel
 		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Sets the nix-packages channel
 		zen-browser.url = "github:0xc000022070/zen-browser-flake"; # Sets the zen-browser channel
 		nixvim = {
@@ -15,7 +16,7 @@
 		};
 	};
 
-	outputs = { nixpkgs, home-manager, nixvim, stylix, zen-browser, ... }@inputs:
+	outputs = { nixpkgs, home-manager, nixvim, stylix, nixCats, ... }@inputs:
 	let
 		system = "x86_64-linux";
 	in {
@@ -28,6 +29,7 @@
 			pkgs = nixpkgs.legacyPackages.${system}; # Gets the amd64 version of packages
 			extraSpecialArgs = { inherit inputs; system = "x86_64-linux"; };
 			modules = [
+				nixCats.homeManagerModules.nixCats
 				stylix.homeManagerModules.stylix
 				nixvim.homeManagerModules.nixvim
 				./home/home.nix
