@@ -1,9 +1,13 @@
 { pkgs, ... }:
 {
 	programs.nixvim = {
-		extraPackages = with pkgs; [
-			lldb
-		];
+		extraPackages = with pkgs; [ lldb ];
+		extraPlugins = [( pkgs.vimPlugins.telescope-dap-nvim )];
+		extraConfigLua = ''
+			require('dap').listeners.after.event_initialized['dapui_config'] = require('dapui').open
+			require('dap').listeners.before.event_terminated['dapui_config'] = require('dapui').close
+			require('dap').listeners.before.event_exited['dapui_config'] = require('dapui').close
+		'';
 		plugins = {
 			dap-lldb.enable = true;
 			dap-ui = {
@@ -29,6 +33,27 @@
 			};
 			dap = {
 				enable = true;
+				signs = {
+					dapBreakpoint = {
+						text = "●";
+						texthl = "DapBreakpoint";
+					};
+					dapBreakpointCondition = {
+						text = "⏏";
+						texthl = "DapBreakpointCondition";
+					};
+					dapLogPoint = {
+						text = "◆";
+						texthl = "DapLogPoint";
+					};
+				};
+				adapters.servers.codelldb = {
+					host = "127.0.0.1";
+					port = 8123;
+					executable = {
+						command = "${pkgs.lldb}/bin/codelldb";
+					};
+				};
 				configurations = {
 					cpp = [
 						{
