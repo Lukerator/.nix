@@ -8,12 +8,12 @@
 				previous.key = "<S-Tab>";
 			};
 			settings.icons = {
-				button = "";
-				pinned = "";
-				modified = "";
+				button = "​";
+				pinned = "​";
+				modified = "​";
 				inactive.separator = {
-					left = "";
-					right = "";
+					left = "​";
+					right = "​";
 				};
 				gitsigns = {
 					added.enabled = false;
