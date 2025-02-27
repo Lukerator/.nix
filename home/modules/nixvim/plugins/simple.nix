@@ -61,17 +61,16 @@
 					lualine_z = [ "tabs" ];
 					lualine_a = [{
 							__unkeyed1 = "buffers";
-							symbols.alternate_file = "";
+							symbols.alternate_file = " ";
 					}];
 				};
-				/* winbar = {
+				winbar = {
 					lualine_c = [{
-						path = 3;
-						shorting_target = 150;
+						path = 10;
 						newfile_status = true;
 						__unkeyed1 = "filename";
 					}];
-				}; */
+				};
 			};
 		};
 	};
