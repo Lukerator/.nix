@@ -7,7 +7,7 @@
 				close.key = "<leader>x";
 				previous.key = "<S-Tab>";
 			};
-			setting.icons = {
+			settings.icons = {
 				button = null;
 				pinned = null;
 				inactive = null;
