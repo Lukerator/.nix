@@ -23,8 +23,8 @@
 			enable = true;
 			settings = {
 				bigfile.enabled = true;
-				quickfile.enabled = false;
 				scratch.enabled = true;
+				quickfile.enabled = false;
 				notifier = {
 					enabled = true;
 					timeout = 3000;
@@ -33,18 +33,44 @@
 		};
 		lualine = {
 			enable = true;
-			settings.sections = {
-				lualine_a = [ "mode" ];
-				lualine_b = [ "filename" ];
-				lualine_c = [ "progress" ];
-				lualine_y = [{
-					__raw = ''
-						function()
-							return tostring(vim.fn.wordcount().words)
-						end
-					'';
-				}];
-				lualine_z = [ "location" ];
+			settings = {
+				options = {
+					section_separators = {
+						left = "";
+						right = "";
+					};
+					component_separators = {
+						left = "";
+						right = "";
+					};
+				sections = {
+					lualine_a = [ "mode" ];
+					lualine_b = [ "filename" ];
+					lualine_c = [ "progress" ];
+					lualine_z = [ "location" ];
+					lualine_y = [{
+						__raw = ''
+							function()
+								return tostring(vim.fn.wordcount().words)
+							end
+						'';
+					}];
+				};
+				tabline = {
+					lualine_z = [ "tabs" ];
+					lualine_a = [{
+							__unkeyed1 = "buffers";
+							symbols.alternate_file = "";
+					}];
+				};
+				winbar = {
+					lualine_c = [{
+						path = 3;
+						shorting_target = 150;
+						newfile_status = true;
+						__unkeyed1 = "filename";
+					}];
+				};
 			};
 		};
 	};
