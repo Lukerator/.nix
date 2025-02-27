@@ -4,7 +4,7 @@
 			mode = [ "n" "v" ];
 			key = "<leader>mc";
 			options.desc = "Multicursors";
-			action = ":MCstart<CR>";
+			action = ":MCstart<CR><C-a>";
 		}
 	];
 }
