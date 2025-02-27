@@ -1,6 +1,5 @@
 {
 	programs.nixvim.plugins = {
-		dap.enable = true;
 		fidget.enable = false;
 		comment.enable = true;
 		dropbar.enable = true;
