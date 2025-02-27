@@ -7,6 +7,17 @@
 				close.key = "<leader>x";
 				previous.key = "<S-Tab>";
 			};
+			setting.icons = {
+				button = null;
+				pinned = null;
+				inactive = null;
+				modified = null;
+				gitsigns = {
+					added.enabled = false;
+					changed.enabled = false;
+					deleted.enabled = false;
+				};
+			};
 		};
 		bullets = {
 			enable = true;
