@@ -7,7 +7,10 @@
 				close.key = "<leader>x";
 				previous.key = "<S-Tab>";
 			};
-			settings.icons.preset = "slanted";
+			settings.icons.separator = {
+				left = "";
+				right = "";
+			};
 		};
 		bullets = {
 			enable = true;
