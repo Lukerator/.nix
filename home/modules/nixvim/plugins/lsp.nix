@@ -7,6 +7,7 @@
 			lua_ls.enable = true;
 			pyright.enable = true;
 			tinymist.enable = true;
+			marksman.enable = true;
 		};
 		keymaps = {
 			extra = [
