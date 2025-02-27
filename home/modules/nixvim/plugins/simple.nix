@@ -64,7 +64,8 @@
 					}];
 				};
 				winbar = {
-					lualine_c = [{
+					lualine_c = [{ __unkeyed-1 = "navic"; }];
+					lualine_x = [{
 						path = 2;
 						shorting_target = 40;
 						newfile_status = true;
