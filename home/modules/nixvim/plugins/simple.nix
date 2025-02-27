@@ -66,6 +66,7 @@
 				winbar = {
 					lualine_c = [{
 						path = 2;
+						shorting_target = 40;
 						newfile_status = true;
 						__unkeyed1 = "filename";
 					}];
