@@ -51,7 +51,7 @@
 					host = "127.0.0.1";
 					port = 8123;
 					executable = {
-						command = "${pkgs.lldb}/bin/codelldb";
+						command = "${pkgs.lldb}/bin/lldb";
 					};
 				};
 				configurations = {
