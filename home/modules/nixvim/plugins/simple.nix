@@ -62,6 +62,7 @@
 					lualine_a = [{
 						__unkeyed1 = "buffers";
 					}];
+					color = "#1E1E2E";
 				};
 				/* winbar = {
 					lualine_c = [{ __unkeyed-1 = "navic"; }];
