@@ -4,7 +4,6 @@
 		./home.nix
 		./hyprland.nix
 		./kitty.nix
-		./nixcats.nix
 		./packages.nix
 		./stylix.nix
 		#./tmux.nix

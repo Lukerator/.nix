@@ -3,7 +3,6 @@
 
 	inputs = {
 		stylix.url = "github:danth/stylix"; # Sets the stylix channel
-		nixCats.url = "github:BirdeeHub/nixCats-nvim"; # Sets the nixCats channel
 		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Sets the nix-packages channel
 		zen-browser.url = "github:0xc000022070/zen-browser-flake"; # Sets the zen-browser channel
 		nixvim = {
