@@ -1,6 +1,6 @@
 {
 	programs.nixvim.plugins = {
-		ddap-lldb.enable = true;
+		dap-lldb.enable = true;
 		dap = {
 			enable = true;
 			configurations = {
