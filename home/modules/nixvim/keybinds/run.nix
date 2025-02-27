@@ -4,7 +4,7 @@
 			mode = "n";
 			key = "<leader>gc";
 			options.desc = "[G]enerate and run [C]++ file";
-			action = '':FloatermNew --autoclose=0 clear && g++ -o out % && ./out && rm ./out<CR>'';
+			action = '':FloatermNew --autoclose=0 clear && g++ -o %:rnil % && ./%:rnil<CR>'';
 		}
 		{
 			mode = "n";
