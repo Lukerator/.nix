@@ -54,21 +54,23 @@
 		};
 		dap-ui = {
 			enable = true;
-			icons = {
-				expanded = "▾";
-				collapsed = "▸";
-				current_frame = "*";
-			};
-			controls.icons = {
-				play = "▶";
-				pause = "⏸";
-				step_into = "⏎";
-				step_out = "⏮ ";
-				run_last = "▶▶";
-				terminate = "⏹";
-				disconnect = "⏏";
-				step_over = "⏭ ";
-				step_back = "⥢ ";
+			settings = {
+				icons = {
+					expanded = "▾";
+					collapsed = "▸";
+					current_frame = "*";
+				};
+				controls.icons = {
+					play = "▶";
+					pause = "⏸";
+					step_into = "⏎";
+					step_out = "⏮ ";
+					run_last = "▶▶";
+					terminate = "⏹";
+					disconnect = "⏏";
+					step_over = "⏭ ";
+					step_back = "⥢ ";
+				};
 			};
 		};
 	};
