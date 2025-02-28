@@ -10,6 +10,7 @@
 			};
 			sources = [
 				{ name = "path"; }
+				{ name = "emoji"; }
 				{ name = "buffer"; }
 				{ name = "codeium"; }
 				{ name = "luasnip"; }
