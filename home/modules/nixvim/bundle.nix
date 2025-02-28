@@ -4,6 +4,5 @@
 		./plugins/bundle.nix
 		./highlight.nix
 		./nixvim.nix
-		./neovide.nix
 	];
 }
