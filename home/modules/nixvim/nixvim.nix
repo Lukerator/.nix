@@ -30,6 +30,7 @@
 			list = true; # Enable display of list characters
 			paste = false; # Disable paste mode
 			number = true; # Show line numbers
+			cmdheight = 0; # Makes the command line only show when needed
 			scrolloff = 10; # Minimum lines to keep above and below the cursor
 			hlsearch = true; # Highlight search matches
 			showmode = true; # Do not show mode in command line
