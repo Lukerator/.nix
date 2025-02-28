@@ -28,7 +28,7 @@
 			mode = "n";
 			key = "<leader>gt";
 			options.desc = "[G]o [T]ypst file";
-			action = ":! typst %<CR><CR>";
+			action = ":! typst c %<CR><CR>";
 		}
 		{
 			mode = "n";
