@@ -43,7 +43,7 @@
 			mode = [ "n" ];
 			key = "<leader>tb";
 			options.desc = "Toggle Terminal Big";
-			action.__raw = "<cmd>FloatermNew --height=90% --width=80% --cwd=~<CR>";
+			action.__raw = "<cmd>FloatermNew --height=0.9 --width=0.9 --cwd=~<CR>";
 		}
 	];
 }
