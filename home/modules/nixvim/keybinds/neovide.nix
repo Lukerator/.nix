@@ -4,43 +4,31 @@
 			key = "<C-S-V>";
 			mode = [ "n" "v" ];
 			options.desc = "Paste";
-			action.__raw = ''
-				if vim.g.neovide then
-					vim.api.nvim_feedkeys('"+P')
-				end
-			'';
+			action = ''"+P'';
 		}
 		{
 			key = "<C-S-V>";
 			mode = [ "i" ];
 			options.desc = "Paste";
-			action.__raw = ''
-				if vim.g.neovide then
-					vim.api.nvim_feedkeys('<C-R>+')
-				end
-			'';
+			action = ''<C-r>+'';
 		}
 		{
 			key = "<C-S-C>";
 			mode = [ "v" ];
 			options.desc = "Copy";
-			action.__raw = ''
-				if vim.g.neovide then
-					vim.api.nvim_feedkeys('"+y')
-				end
-			'';
+			action = ''"+y'';
 		}
 		{
 			key = "<C-+>";
 			mode = [ "n" "v" ];
 			options.desc = "Zoom In";
-			action.__raw = "<cmd>vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<CR>";
+			action.__raw = "vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1";
 		}
 		{
 			key = "<C-->";
 			mode = [ "n" "v" ];
 			options.desc = "Zoom Out";
-			action.__raw = "<cmd>vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<CR>";
+			action.__raw = "vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1";
 		}
 	];
 }
