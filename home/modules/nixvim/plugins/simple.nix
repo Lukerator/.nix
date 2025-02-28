@@ -26,6 +26,7 @@
 		snacks = {
 			enable = true;
 			settings = {
+				picker.enabled = true;
 				bigfile.enabled = true;
 				scratch.enabled = true;
 				quickfile.enabled = false;

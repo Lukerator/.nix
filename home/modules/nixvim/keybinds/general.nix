@@ -19,7 +19,54 @@
 			key = "<leader>sb";
 			mode = [ "n" "v" ];
 			options.desc = "Search Scratch Buffer";
-			action.__raw = "function() Snacks.scratch.select() end";
+			action.__raw = ''
+				local M = {}
+				function M.select_scratch() 
+					local items = Snacks.scratch.list()
+					process_items(items)
+					Snacks.picker.pick({
+						source = "scratch",
+						items = items,
+						format = "text",
+						layout = {
+							layout = { title = "Select scratch Buffer"},
+							preview = true,
+							preset = function()
+								return vim.o.columns > 120 and "float" or "vertical"
+							end,
+						},
+						on_change = function()
+							vim.cmd.startinsert()
+						end,
+						transform = function(item)
+							item.text = format_item_text(item)
+						end,
+						win = {
+							input = {
+								keys = {
+									["<C-d>"] = { "delete", mode = { "i", "n" } },
+								},
+							},
+						},
+						actions = {
+							default = function(picker, item)
+								for _, entry in ipairs(items) do
+									if entry.cwd == item.cwd then
+										os.remove(item.file)
+									end
+								end
+								picker:close()
+								M.select_scratch()
+							end,
+						},
+						confirm = function(_, item)
+							if item then
+								Snacks.scratch.open({ icon = item.icon, file = item.file, name = item.name, ft = item.ft })
+							end
+						end,
+					})
+				end
+			'';
 		}
 		{
 			key = "<leader>b";
