@@ -6,7 +6,7 @@
 			options.desc = "Paste";
 			action.__raw = ''
 				if vim.g.neovide then
-					'"+P';
+					vim.api.nvim_feedkeys('"+P')
 				end
 			'';
 		}
@@ -16,7 +16,7 @@
 			options.desc = "Paste";
 			action.__raw = ''
 				if vim.g.neovide then
-					'<C-R>+'
+					vim.api.nvim_feedkeys('<C-R>+')
 				end
 			'';
 		}
@@ -26,7 +26,7 @@
 			options.desc = "Copy";
 			action.__raw = ''
 				if vim.g.neovide then
-					'"+y'
+					vim.api.nvim_feedkeys('"+y')
 				end
 			'';
 		}
