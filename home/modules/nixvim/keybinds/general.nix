@@ -30,6 +30,13 @@
 					{ 0, 0, 0, 0 }[1] = math.max({ 0, 0, 0, 0 }[1], vim.api.nvim_strwidth(item.name))
 					{ 0, 0, 0, 0 }[1] = math.max({ 0, 0, 0, 0 }[1], vim.api.nvim_strwidth(item.branch))
 				end
+				local function format_item_text(items)
+					local parts = { item.cwd, item.icon, item.name, item.branch }
+					for i, part in ipairs(parts) do
+						parts[i] = part .. string.rep(" ", column_widths[i] - vim.api.nvim_strwidth(part))
+					end
+					return table.concat(parts, " ")
+				end
 				Snacks.picker.pick({
 					source = "scratch",
 					items = Snacks.scratch.list(),
