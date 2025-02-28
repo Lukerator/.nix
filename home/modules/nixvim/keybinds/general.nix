@@ -27,6 +27,12 @@
 			options.desc = "Toggle Scratch Buffer";
 			action.__raw = "function() Snacks.scratch() end";
 		}
+		{
+			key = "<leader>lb";
+			mode = [ "n" "v" ];
+			options.desc = "List Scratch Buffers";
+			action.__raw = "function() Snacks.scratch.list() end";
+		}
 		/* {
 			key = "<C-n>";
 			mode = [ "n" "v" ];
