@@ -86,6 +86,8 @@
 						end,
 					})
 				end
+
+				return M
 			'';
 		}
 		{
