@@ -2,7 +2,7 @@
 	programs.neovide = {
                 enable = true;
 		settings = {
-			font.size = 12.0;
+			font.size = 13.0;
 		};
         };
 }
