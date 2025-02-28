@@ -31,19 +31,19 @@
 			mode = [ "n" ];
 			key = "<leader>tt";
 			options.desc = "Toggle Terminal";
-			action.__raw = "<cmd>FloatermNew --cwd=~<CR>";
+			action.__raw = ''<cmd>FloatermNew --cwd=~<CR>'';
 		}
 		{
 			mode = [ "n" ];
 			key = "<leader>th";
 			options.desc = "Toggle Terminal Here";
-			action.__raw = "<cmd>FloatermNew --cwd=%:p:h<CR>";
+			action.__raw = ''<cmd>FloatermNew --cwd=%:p:h<CR>'';
 		}
 		{
 			mode = [ "n" ];
 			key = "<leader>tb";
 			options.desc = "Toggle Terminal Big";
-			action.__raw = "<cmd>FloatermNew --height=0.9 --width=0.9 --cwd=~<CR>";
+			action.__raw = ''<cmd>FloatermNew --height=0.9 --width=0.9 --cwd=~<CR>'';
 		}
 	];
 }
