@@ -21,7 +21,7 @@
 			action.__raw = "function()
 				Snacks.picker.pick({
 					source = 'scratch',
-					items = items,
+					items = Snacks.scratch.list(),
 					format = 'text',
 					layout = {
 						layout = { title = ' Select Scratch Buffer: ' },
