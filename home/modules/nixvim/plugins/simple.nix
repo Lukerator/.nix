@@ -7,10 +7,10 @@
 				close.key = "<leader>x";
 				previous.key = "<S-Tab>";
 			};
-			settings.icons.separator = {
+			/* settings.icons.separator = {
 				left = "";
 				right = "";
-			};
+			}; */
 		};
 		bullets = {
 			enable = true;
