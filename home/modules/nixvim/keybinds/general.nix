@@ -21,13 +21,16 @@
 			options.desc = "Search Scratch Buffer";
 			action.__raw = ''
 				local M = {}
+
 				local column_widths = { 0, 0, 0, 0 }
+
 				local function update_column_widths(item)
 					column_widths[1] = math.max(column_widths[1], vim.api.nvim_strwidth(item.cwd))
 					column_widths[2] = math.max(column_widths[2], vim.api.nvim_strwidth(item.icon))
 					column_widths[3] = math.max(column_widths[3], vim.api.nvim_strwidth(item.name))
 					column_widths[4] = math.max(column_widths[4], vim.api.nvim_strwidth(item.branch))
-				end					
+				end
+
 				local function process_item(item)
 					item._path = item.file
                                         item.branch = item.branch and ("branch:&space;"):format(item.branch) or ""
@@ -36,9 +39,11 @@
 					item.preview = { text = item.file }
 					update_column_widths(item)
 				end
+
 				function M.select_scratch() 
 					local items = Snacks.scratch.list()
 					process_items(items)
+
 					Snacks.picker.pick({
 						source = "scratch",
 						items = items,
