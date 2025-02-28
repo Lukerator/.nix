@@ -27,5 +27,17 @@
 			options.desc = "Toggle Scratch Buffer";
 			action.__raw = "function() Snacks.scratch() end";
 		}
+		{
+			mode = [ "n" ];
+			key = "<leader>tt";
+			options.desc = "Toggle Terminal";
+			action.__raw = "<cmd>FloatermNew --cwd=~<CR>";
+		}
+		{
+			mode = [ "n" ];
+			key = "<leader>th";
+			options.desc = "Toggle Terminal Here";
+			action.__raw = "<cmd>FloatermNew --cwd=%:p:h<CR>";
+		}
 	];
 }
