@@ -1,0 +1,192 @@
+@define-color transparent rgba(235, 219, 178, 0);
+/* @define-color base #282828;
+@define-color text #D4BE98;
+@define-color focused #eba0ac;
+@define-color button #7c6f64; */
+@define-color rosewater #f4dbd6;
+@define-color flamingo #f0c6c6;
+@define-color pink #f5bde6;
+@define-color mauve #c6a0f6;
+@define-color red #ed8796;
+@define-color maroon #ee99a0;
+@define-color peach #f5a97f;
+@define-color yellow #eed49f;
+@define-color green #a6da95;
+@define-color teal #8bd5ca;
+@define-color sky #91d7e3;
+@define-color sapphire #7dc4e4;
+@define-color blue #8aadf4;
+@define-color lavender #b7bdf8;
+@define-color text #cad3f5;
+@define-color subtext1 #b8c0e0;
+@define-color subtext0 #a5adcb;
+@define-color overlay2 #939ab7;
+@define-color overlay1 #8087a2;
+@define-color overlay0 #6e738d;
+@define-color surface2 #5b6078;
+@define-color surface1 #494d64;
+@define-color surface0 #363a4f;
+@define-color base #24273a;
+@define-color mantle #1e2030;
+@define-color crust #181926;
+
+window#waybar {
+	background-color: @base;
+	font-family: "Cantarell", "Font Awesome 5 Pro";
+	font-size: 9pt;
+	font-weight: bold;
+	margin-top: 8px;
+	min-height: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#window {
+	color: @text;
+	background-color: @base;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces button.active {
+	color: @text;
+	background-color: @base;
+	min-height: 0px;
+	margin-top: -2px;
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -13px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces button {
+	color: @blue;
+	background-color: @base;
+	min-height: 0px;
+	margin-top: -2px;
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -13px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces button.focused {
+	color: @base;
+	background-color: @base;
+	background: @focused;
+	min-height: 0px;
+	margin-top: -2px;
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -13px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 0px;
+}
+
+#workspaces {
+	background-color: @base;
+	color: @text;
+	min-height: 0px;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#clock {
+	color: @text;
+	background-color: @base;
+	min-height: 0px;
+	margin-top: 8px;
+	margin-left: 2px;
+	margin-right: 13px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#network {
+	background-color: @base;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#pulseaudio {
+	background-color: @base;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#pulseaudio.muted {
+	background-color: @base;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#backlight {
+	background-color: @base;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
+
+#battery {
+	background-color: @base;
+	color: @text;
+	min-height: 0px;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	box-shadow: 0 0 0 0px;
+}
