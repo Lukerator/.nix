@@ -27,5 +27,29 @@
 			options.desc = "Toggle Scratch Buffer";
 			action.__raw = "function() Snacks.scratch() end";
 		}
+		{
+			mode = [ "n" ];
+			key = "<leader>uh";
+			options.desc = "Update home";
+			action.__raw = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic home-update<cr>";
+		}
+		{
+			mode = [ "n" ];
+			key = "<leader>us";
+			options.desc = "Update system";
+			action.__raw = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic system-update<cr>";
+		}
+		{
+			mode = [ "n" ];
+			key = "<leader>upd";
+			options.desc = "Update everything";
+			action.__raw = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic update<cr>";
+		}
+		{
+			mode = [ "n" ];
+			key = "<leader>upg";
+			options.desc = "Upgrade everything";
+			action.__raw = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic upgrade<cr>";
+		}
 	];
 }
