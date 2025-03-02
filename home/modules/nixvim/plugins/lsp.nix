@@ -3,6 +3,7 @@
 		enable = true;
 		servers = {
 			nixd.enable = true;
+			texlab.enable = true;
 			clangd.enable = true;
 			lua_ls.enable = true;
 			pyright.enable = true;
