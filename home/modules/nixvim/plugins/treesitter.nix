@@ -11,7 +11,6 @@
 				"cpp"
 				"lua"
 				"nix"
-				"latex"
 				"typst"
 				"python"
 				"markdown"

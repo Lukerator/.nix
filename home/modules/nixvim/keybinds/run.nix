@@ -26,18 +26,6 @@
 		}
 		{
 			mode = "n";
-			key = "<leader>gm";
-			options.desc = "[G]o [M]arkdown file";
-			action = ":! pandoc -o %:r.pdf %<CR><CR>";
-		}
-		{
-			mode = "n";
-			key = "<leader>gl";
-			options.desc = "[G]o [L]atex file";
-			action = ":! pdflatex %<CR><CR>";
-		}
-		{
-			mode = "n";
 			key = "<leader>gt";
 			options.desc = "[G]o [T]ypst file";
 			action = ":! typst c %<CR><CR>";

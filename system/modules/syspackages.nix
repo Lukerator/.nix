@@ -25,7 +25,6 @@
 		nautilus-python
 		neovide
 		p7zip-rar
-		pandoc
 		prismlauncher
 		polkit_gnome
 		polychromatic
@@ -37,7 +36,6 @@
 		swaynotificationcenter
 		swayosd
 		swaylock-effects
-		texliveMedium
 		typst
 		unzip
 		waybar
