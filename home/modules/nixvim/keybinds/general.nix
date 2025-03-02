@@ -18,7 +18,7 @@
 		{
 			mode = "n";
 			key = "<leader>mk";
-			action = "<cmd>Markview Toggle<CR>>";
+			action = "<cmd>Markview Toggle<CR>";
 		}
 		{
 			key = "<leader>sb";
@@ -34,27 +34,33 @@
 		}
 		{
 			mode = [ "n" ];
+			key = "<leader>ft";
+			options.desc = "Floating Terminal";
+			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~<cr>";
+		}
+		{
+			mode = [ "n" ];
 			key = "<leader>uh";
 			options.desc = "Update home";
-			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic home-update<CR>>";
+			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic home-update<cr>";
 		}
 		{
 			mode = [ "n" ];
 			key = "<leader>us";
 			options.desc = "Update system";
-			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic system-update<CR>>";
+			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic system-update<cr>";
 		}
 		{
 			mode = [ "n" ];
 			key = "<leader>upd";
 			options.desc = "Update everything";
-			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic update<CR>>";
+			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic update<cr>";
 		}
 		{
 			mode = [ "n" ];
 			key = "<leader>upg";
 			options.desc = "Upgrade everything";
-			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic upgrade<CR>>";
+			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~ zsh -ic upgrade<cr>";
 		}
 	];
 }
