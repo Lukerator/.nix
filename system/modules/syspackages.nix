@@ -15,6 +15,7 @@
 		godot_4
 		home-manager
 		hyprshot
+		latexmk
 		localsend
 		lsd
 		lua
@@ -37,6 +38,7 @@
 		swaynotificationcenter
 		swayosd
 		swaylock-effects
+		typst
 		unzip
 		waybar
 		wineWowPackages.wayland

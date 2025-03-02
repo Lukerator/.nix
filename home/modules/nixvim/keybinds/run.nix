@@ -26,9 +26,9 @@
 		}
 		{
 			mode = "n";
-			key = "<leader>gt";
-			options.desc = "[G]o [T]ypst file";
-			action = ":! typst c %<CR><CR>";
+			key = "<leader>gp";
+			options.desc = "[G]o to [P]df";
+			action = ":! pandoc -o %:r.pdf %<CR><CR>";
 		}
 		{
 			mode = "n";
