@@ -37,6 +37,7 @@
 		swaynotificationcenter
 		swayosd
 		swaylock-effects
+		texliveMedium
 		typst
 		unzip
 		waybar
