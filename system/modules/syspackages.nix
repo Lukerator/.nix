@@ -15,7 +15,6 @@
 		godot_4
 		home-manager
 		hyprshot
-		latexmk
 		localsend
 		lsd
 		lua
@@ -38,6 +37,7 @@
 		swaynotificationcenter
 		swayosd
 		swaylock-effects
+		texliveMedium
 		typst
 		unzip
 		waybar
