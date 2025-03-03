@@ -1,8 +1,10 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
 	wayland.windowManager.hyprland = {
 		enable = true; # Enables Hyprland
 		xwayland.enable = true; # Enables XWayland
+		package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+		portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 		settings = {
 			"$mod" = "SUPER"; # Sets mod key to SUPER
 			dwindle.preserve_split = true; # Preserves split
@@ -24,7 +26,7 @@
 			]; # Window rules
 			general = {
 				gaps_in = 4; # Sets gap in size
-				gaps_out = 8; # Sets gap out size
+				gaps_out = 10; # Sets gap out size
 				#gaps_in = 5; # Sets gap in size
 				#gaps_out = 15; # Sets gap out size
 				border_size = 2; ## sets border size
