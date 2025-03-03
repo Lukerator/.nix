@@ -8,6 +8,20 @@
 			stylua
 			typstfmt
 		];
+		keymaps = [
+			{
+				mode = "";
+				key = "<leader>f";
+				action.__raw = ''
+					function()
+						require('conform').format { async = true, lsp_fallback = true }
+					end
+				'';
+				options = {
+					desc = "[F]ormat buffer";
+				};
+			}
+		];
 		plugins.conform-nvim = {
 			enable = true;
 			settings = {
@@ -19,7 +33,7 @@
 					typst = [ "typstfmt" ];
 					cpp = [ "clang_format" ];
 				};
-				format_after_save = ''
+				/* format_after_save = ''
 					function(bufnr)
 						if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
 							return
@@ -45,22 +59,8 @@
 						end
 						return { timeout_ms = 200, lsp_fallback = true }, on_format
 					end
-				'';
+				''; */
 			};
 		};
-		keymaps = [
-			{
-				mode = "";
-				key = "<leader>f";
-				action.__raw = ''
-					function()
-						require('conform').format { async = true, lsp_fallback = true }
-					end
-				'';
-				options = {
-					desc = "[F]ormat buffer";
-				};
-			}
-		];
 	};
 }
