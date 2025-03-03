@@ -8,7 +8,7 @@
 				port = 4567;
 				basicAuthEnabled = true;
 				basicAuthUsername = "Lukerator";
-				basicAuthPasswordFile = ./Other/mangapass.txt;
+				basicAuthPasswordFile = ./.other/mangapass.txt;
 				extensionRepos = [ "https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" ];
 			};
 		};

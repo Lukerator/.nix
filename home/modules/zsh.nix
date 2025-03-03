@@ -7,6 +7,10 @@
 		oh-my-zsh = {
 			enable = true; # Enables oh-my-zsh
 			theme = "robbyrussell"; # Sets oh-my-zsh theme
+			plugins = [
+				"nix-shell"
+				"nix-zsh-completions"
+			];
 		};
 		shellAliases = {
 			ls = "lsd";
