@@ -12,7 +12,6 @@
 		gcc
 		git
 		gh
-		godot_4
 		home-manager
 		hyprshot
 		localsend
