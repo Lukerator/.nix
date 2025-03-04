@@ -6,6 +6,7 @@
 		./codesnap.nix
 		./conform.nix
 		./dashboard.nix
+		./debug.nix
 		./lsp.nix
 		./neotree.nix
 		./telescope.nix
