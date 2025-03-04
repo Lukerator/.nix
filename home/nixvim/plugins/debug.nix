@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
 	programs.nixvim = {
 		extraPackages = with pkgs; [ lldb gdb ];
@@ -58,27 +58,9 @@
 				let
 					program.__raw = ''
 						function()
-							return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. '/', "file")
+							return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. '/main')
 						end
 					'';
-					codelldb-config =
-					{
-						inherit program;
-						name = "Launch (CodeLLDB)";
-						type = "codelldb";
-						request = "launch";
-						cwd = ''''${workspaceFolder}'';
-						stopOnEntry = false;
-					};
-					gdb-config =
-					{
-						inherit program;
-						name = "Launch (GDB)";
-						type = "gdb";
-						request = "launch";
-						cwd = ''''${workspaceFolder}'';
-						stopOnEntry = false;
-					};
 					lldb-config =
 					{
 						inherit program;
@@ -92,11 +74,7 @@
 				{
 					cpp =
 					[
-						codelldb-config
 						lldb-config
-					]
-					++ lib.optionals pkgs.stdenv.isLinux [
-						gdb-config
 					];
 				};
 			};
