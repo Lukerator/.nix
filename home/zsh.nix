@@ -7,6 +7,7 @@
 		oh-my-zsh = {
 			enable = true; # Enables oh-my-zsh
 			theme = "robbyrussell"; # Sets oh-my-zsh theme
+			custom = 
 			plugins = [
 				"nix-shell"
 				"nix-zsh-completions"
