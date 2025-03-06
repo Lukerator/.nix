@@ -1,3 +1,0 @@
-{
-	environment.etcBackupExtension = ".bak";
-}

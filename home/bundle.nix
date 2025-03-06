@@ -1,7 +1,7 @@
 {
 	imports = [
 		./nixvim/bundle.nix
-		./droid-home.nix
+		./home.nix
 		./fuzzel.nix
 		./hyprland.nix
 		./kitty.nix
