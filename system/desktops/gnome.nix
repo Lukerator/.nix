@@ -1,14 +1,14 @@
 { pkgs, ... }:
 {
-	services.xserver.displayManager.gdm.enable = true; # Enables GDM as the Display Manager
-	services.xserver.desktopManager.gnome.enable = true; # Enables Gnome as a Desktop Environment
+	services.xserver.displayManager.gdm.enable = true;
+	services.xserver.desktopManager.gnome.enable = true;
 	environment.systemPackages = with pkgs.gnomeExtensions; [
 		arcmenu
 		blur-my-shell
 		dash-to-dock
 		just-perfection
 		user-themes
-	]; # Installs Gnome extensions declaratively
+	];
 	environment.gnome.excludePackages = with pkgs; [
 		#adwaita-icon-theme
 		#baobab
@@ -54,5 +54,5 @@
 		#xdg-user-dirs-gtk
 		#xdg-user-dirs-gtk
 		yelp
-	]; # Excludes uncommented apps from the Gnome suite
+	];
 }

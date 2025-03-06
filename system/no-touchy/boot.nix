@@ -1,19 +1,18 @@
 {
 	boot = {
-		consoleLogLevel = 0; # See line 4
-		initrd.verbose = false; # Silences boot messages
-		kernelParams = [ "quiet" "udev.log_level=0" ]; # See line 4
+		consoleLogLevel = 0;
+		initrd.verbose = false;
+		kernelParams = [ "quiet" "udev.log_level=0" ];
 		plymouth = {
-			enable = true; # Enables Startup animation
-			#theme = "bgrt"; # Sets Startup animation theme
+			enable = true;
 		};
 	loader = {
-		systemd-boot.enable = false; # Disables Systemd-Boot in favor of Grub
-		efi.canTouchEfiVariables = true; # Allows EFI to create variables
+		systemd-boot.enable = false;
+		efi.canTouchEfiVariables = true;
 		grub = {
-			enable = true; # Enables the Grub bootloader
-			efiSupport = true; # Allows Grub to access EFI
-			devices = [ "nodev" ]; # Sends list of devices to Grub
+			enable = true;
+			efiSupport = true;
+			devices = [ "nodev" ];
 			extraEntries = ''
 				menuentry "Reboot" {
 					reboot
@@ -22,7 +21,7 @@
 					halt
 				}
 				'';
-			}; # Adds "Reboot" and "Shut Down" entries to Grub
+			};
 		};
 	};
 }

@@ -1,3 +1,3 @@
 {
-	networking.hostName = "Luke-PC"; # Sets hostname
+	networking.hostName = "Luke-PC";
 }

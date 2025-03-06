@@ -1,3 +1,3 @@
 {
-	programs.steam.enable = true; # Enables steam
+	programs.steam.enable = true;
 }

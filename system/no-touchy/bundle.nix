@@ -3,7 +3,6 @@
 		./asus.nix
 		./audio.nix
 		./boot.nix
-		#./firefox.nix
 		./flakes.nix
 		./font.nix
 		./hardware.nix

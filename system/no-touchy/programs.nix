@@ -1,7 +1,7 @@
 {
-	documentation.nixos.enable = false; # Disables NixOS Manual
+	documentation.nixos.enable = false;
 	nixpkgs.config = { 
-		allowUnfree = true; # Allows unfree packages
+		allowUnfree = true;
 		permittedInsecurePackages = [
 			"freeimage-unstable-2021-11-01"
 		];

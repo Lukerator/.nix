@@ -1,3 +1,3 @@
 {
-	networking.networkmanager.enable = true; # Enables Network-Manager
+	networking.networkmanager.enable = true;
 }

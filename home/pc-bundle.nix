@@ -1,14 +1,14 @@
 {
 	imports = [
+		./nixvim/bundle.nix
+		./droid-home.nix
 		./fuzzel.nix
-		./home.nix
 		./hyprland.nix
 		./kitty.nix
 		./packages.nix
+		./pc-home.nix
 		./stylix.nix
-		#./tmux.nix
 		./waybar.nix
 		./zsh.nix
-		./nixvim/bundle.nix
 	];
 }

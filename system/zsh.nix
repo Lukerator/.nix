@@ -1,3 +1,3 @@
 {
-	programs.zsh.enable = true; # Enables ZShell - terminal shell
+	programs.zsh.enable = true;
 }

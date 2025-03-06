@@ -1,12 +1,12 @@
 {
 	programs.zsh = {
-		enable = true; # Enables ZShell
-		enableCompletion = true; # Enables completion
-		autosuggestion.enable = false; # Disables suggestions
-		syntaxHighlighting.enable = true; # Enables syntax highlighting
+		enable = true;
+		enableCompletion = true;
+		autosuggestion.enable = false;
+		syntaxHighlighting.enable = true;
 		oh-my-zsh = {
-			enable = true; # Enables oh-my-zsh
-			theme = "robbyrussell"; # Sets oh-my-zsh theme
+			enable = true;
+			theme = "robbyrussell";
 		};
 		shellAliases = {
 			ls = "lsd";
@@ -20,6 +20,6 @@
 			upgrade = "git-update && upgrade-no-git && git-update";
 			home-update = "git-update && home-update-no-git";
 			system-update = "git-update && system-update-no-git";
-		}; # Sets aliases
+		};
 	};
 }

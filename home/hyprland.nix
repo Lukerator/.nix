@@ -1,35 +1,32 @@
 { pkgs, ... }:
 {
 	wayland.windowManager.hyprland = {
-		enable = true; # Enables Hyprland
-		xwayland.enable = true; # Enables XWayland
+		enable = true;
+		xwayland.enable = true;
 		settings = {
-			"$mod" = "SUPER"; # Sets mod key to SUPER
-			dwindle.preserve_split = true; # Preserves split
-			gestures.workspace_swipe = true; # Enables swipe gesture
+			"$mod" = "SUPER";
+			dwindle.preserve_split = true;
+			gestures.workspace_swipe = true;
 			monitor = [
 				"eDP-1, prefered, auto, 1"
-			]; # Sets monitor settings
+			];
 			misc = {
-				force_default_wallpaper = 1; # Disables anime girl wallpaper
-				disable_hyprland_logo = true; # See line 13
+				force_default_wallpaper = 1;
+				disable_hyprland_logo = true;
 			};
 			bindm = [
 				"$mod, mouse:272, movewindow"
 				"$mod, mouse:273, resizewindow"
-			]; # Binds mouse keys to move and resize windows
+			];
 			windowrulev2 = [
 				"suppressevent maximize, class:.*"
 				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-			]; # Window rules
+			];
 			general = {
-				gaps_in = 4; # Sets gap in size
-				gaps_out = 10; # Sets gap out size
-				#gaps_in = 5; # Sets gap in size
-				#gaps_out = 15; # Sets gap out size
-				border_size = 2; ## sets border size
-				#border_size = 3; ## sets border size
-				layout = "dwindle"; # Sets layout to Dwindle
+				gaps_in = 4;
+				gaps_out = 10;
+				border_size = 2;
+				layout = "dwindle";
 			};
 			exec-once = [
 				"swaync"
@@ -37,7 +34,7 @@
 				"swaybg -i ~/Pictures/background.png"
 				"killall -q waybar;sleep 1 && waybar"
 				"${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
-			]; # Background Startup programs
+			];
 			bindel = [
 				",XF86MonBrightnessUp, exec, swayosd-client --brightness raise"
 				",XF86MonBrightnessDown, exec, swayosd-client --brightness lower"
@@ -45,44 +42,41 @@
 				",XF86AudioRaiseVolume, exec, swayosd-client --output-volume raise --max-volume 150"
 				",XF86AudioLowerVolume, exec, swayosd-client --output-volume lower --max-volume 150"
 				",XF86AudioMicMute, exec, swayosd-client --input-volume mute-toggle"
-			]; # Volume and brightness keybinds
+			];
 			input = {
-				repeat_rate = 50; # Sets the repeat rate
-				sensitivity = 0.4; # Sets sensitivity
-				repeat_delay = 300; # Sets the repeat delay
-				follow_mouse = true; # sets focus to follow mouse
-				#force_no_accel = true; # Disables acceleration
-				kb_layout = "ro"; # Sets keyboard language and layout
-				touchpad.natural_scroll = true; # Enables natural scroll
-				kb_options = "grp:win_space_toggle"; # Sets the layout switching keybind
+				repeat_rate = 50;
+				sensitivity = 0.4;
+				repeat_delay = 300;
+				follow_mouse = true;
+				kb_layout = "ro";
+				touchpad.natural_scroll = true;
+				kb_options = "grp:win_space_toggle";
 			};
 			decoration = {
-				#rounding = 10; # Rounds corners
-				rounding = 0; # Rounds corners
-				active_opacity = 1; # Sets opacity for active window
-				inactive_opacity = 0.95; # Sets opacity for inactive windows
+				rounding = 5;
+				active_opacity = 1;
+				inactive_opacity = 0.95;
 				blur = {
-					size = 3; # Sets blur strength
-					passes = 1; # Sets blur passes
-					enabled = true; # Enables blur
-					vibrancy = 0.1696; # Sets blur vibrancy
+					size = 3;
+					passes = 1;
+					enabled = true;
+					vibrancy = 0.1696;
 				};
 				shadow = {
-					range = 4; # Sets shadow range
-					enabled = false; # Enables shados
-					render_power = 3; # Sets shadow rendering
-					#color = "rgba(1a1a1aee)"; # Sets shadow color
+					range = 4;
+					enabled = false;
+					render_power = 3;
 				};
 			};
 			animations = {
-				enabled = true; # Enables animation
+				enabled = true;
 				bezier = [
 					"linear,0,0,1,1"
 					"quick,0.15,0,0.1,1"
 					"easeOutQuint,0.23,1,0.32,1"
 					"almostLinear,0.5,0.5,0.75,1.0"
 					"easeInOutCubic,0.65,0.05,0.36,1"
-				]; # Sets Bezier curves
+				];
 				animation = [
 					"fade, 1, 3.03, quick"
 					"global, 1, 10, default"
@@ -100,7 +94,7 @@
 					"workspacesIn, 1, 1.21, almostLinear, fade"
 					"workspacesOut, 1, 1.94, almostLinear, fade"
 					"windowsIn, 1, 4.1, easeOutQuint, popin 87%"
-				]; # Applies Bezier curves to animations
+				];
 			};
 			bind = [
 				"$mod, p, exec, hyprshot -m output"
@@ -159,9 +153,7 @@
 				"$mod SHIFT, code:20, movetoworkspace, -1"
 				"$mod SHIFT, code:21, movetoworkspace, +1"
 
-				#"$mod SHIFT, x, exec, wlogout"
-				#"$mod SHIFT, l, exec, swaylock -c 282828 --ring-color 282828 --hide-keyboard-layout --separator-color 282828 --inside-color 282828 --key-hl-color 80AA9E --ring-ver-color 282828 --line-ver-color 282828 --line-color 282828 --inside-ver-color 282828 --layout-text-color 282828 --text-ver-color 282828"
-			]; # Common binds
+			];
 		};
 	};
 }

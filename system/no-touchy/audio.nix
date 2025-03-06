@@ -1,3 +1,3 @@
 {
-	services.pipewire.enable = true; # Enables PipeWire - additional plugins might break it
+	services.pipewire.enable = true;
 }

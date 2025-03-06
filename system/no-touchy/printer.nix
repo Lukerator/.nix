@@ -1,10 +1,10 @@
 {
 	services = {
-		printing.enable = true; # Enables printer support
+		printing.enable = true;
 		avahi = {
-			enable = true; # Enables wireless printer support
-			nssmdns4 = true; # See line 6
-			openFirewall = true; # See line 6
+			enable = true;
+			nssmdns4 = true;
+			openFirewall = true;
 		};
 	};
 }

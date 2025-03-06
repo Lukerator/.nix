@@ -45,5 +45,5 @@
 		wl-clipboard-x11
 		wl-clip-persist
 		zathura
-	]; # Installs packages
+	];
 }

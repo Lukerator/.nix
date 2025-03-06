@@ -1,14 +1,14 @@
 { pkgs, ... }:
 {
 	stylix = {
-		enable = true; # Enables Stylix
-		polarity = "dark"; # Sets theme to dark
-		cursor.size = 24; # Sets cursor size
-		#image = ./background/background-cat.png; # Sets wallpaper image
-		image = ./background/background-mac.png; # Sets wallpaper image
-		#image = .background/background-gruv.png; # Sets wallpaper image
+		enable = true;
+		cursor.size = 24;
+		polarity = "dark";
+		#image = ./background/background-cat.png;
+		image = ./background/background-mac.png;
+		#image = .background/background-gruv.png;
 		#base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
-		#base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml"; # Sets color scheme
+		#base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml";
 	};
 }
