@@ -6,7 +6,7 @@
 		./hyprland.nix
 		./kitty.nix
 		./packages.nix
-		./pc-home.nix
+		./home.nix
 		./stylix.nix
 		./waybar.nix
 		./zsh.nix
