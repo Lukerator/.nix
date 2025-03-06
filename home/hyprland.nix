@@ -1,10 +1,8 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
 	wayland.windowManager.hyprland = {
 		enable = true; # Enables Hyprland
 		xwayland.enable = true; # Enables XWayland
-		package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-		portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 		settings = {
 			"$mod" = "SUPER"; # Sets mod key to SUPER
 			dwindle.preserve_split = true; # Preserves split

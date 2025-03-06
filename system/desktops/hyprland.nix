@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{
 	environment = {
 		sessionVariables.NIXOS_OZONE_WL = "1"; # Enables Wayland for apps that semi-support it
 	};
@@ -9,8 +9,6 @@
 	programs.hyprland = {
 		enable = true; # Enables Hyprland as a Window Manager/Desktop Environment
 		withUWSM = false;
-		package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-		portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 	};
 	services = {
 		libinput = {
