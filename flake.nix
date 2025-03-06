@@ -11,8 +11,20 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 			url = "github:nix-community/home-manager";
 		};
+		/* nvf = {
+			url = "github:notashelf/nvf";
+			inputs.nixpkgs.follows = "nixpkgs";
+		}; */
 	};
-	outputs = { home-manager, nixpkgs, nixvim, stylix, ... }@inputs: let system = "x86_64-linux"; in {
+	outputs = {
+		home-manager,
+		nixpkgs,
+		nixvim,
+		stylix,
+		# nvf,
+		...
+	}@inputs:
+	let system = "x86_64-linux"; in {
 		nixosConfigurations.Luke-PC =  nixpkgs.lib.nixosSystem {
 			inherit system;
 			specialArgs = { inherit inputs; };
@@ -26,6 +38,7 @@
 			pkgs = nixpkgs.legacyPackages.${system};
 			modules = [
 				./home/bundle.nix
+				# nvf.homeManagerModules.default
 				stylix.homeManagerModules.stylix
 				nixvim.homeManagerModules.nixvim
 			];
