@@ -34,7 +34,7 @@
 		}
 		{
 			mode = [ "n" ];
-			key = "<leader>ft";
+			key = "<leader>t";
 			options.desc = "Floating Terminal";
 			action = "<cmd>FloatermNew --height=0.8 --width=0.8 --cwd=~<cr>";
 		}
