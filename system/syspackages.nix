@@ -24,6 +24,7 @@
 		nautilus-python
 		neovide
 		p7zip-rar
+		pixelorama
 		prismlauncher
 		polkit_gnome
 		polychromatic
