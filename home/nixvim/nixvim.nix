@@ -5,7 +5,7 @@
 		colorschemes = {
 			catppuccin = {
 				enable = true; # Enable Catppuccin colorscheme
-				settings.flavour = "mocha"; # Set Catppuccin flavor
+				settings.flavour = "macchiato"; # Set Catppuccin flavor
 			};
 			/*gruvbox = {
 				enable = true; # Enable Gruvbox colorscheme

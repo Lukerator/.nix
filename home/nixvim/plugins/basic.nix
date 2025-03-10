@@ -5,7 +5,6 @@
 		luasnip.enable = true;
 		dropbar.enable = true;
 		floaterm.enable = true;
-		markview.enable = true;
 		typst-vim.enable = true;
 		which-key.enable = true;
 		cmp-emoji.enable = true;
