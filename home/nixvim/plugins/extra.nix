@@ -4,7 +4,7 @@
 		name = "scratch-nvim";
 		src = pkgs.fetchFromGitHub {
 			tag = "";
-			hash = "01r35pplwll1nlc26xwrx9f3xnhxq0yrkrh0m1jviy78qhx03r3s";
+			hash = "";
 			owner = "swaits";
 			repo = "scratch.nvim";
 		};
