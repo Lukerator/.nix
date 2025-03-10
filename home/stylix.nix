@@ -4,6 +4,7 @@
 		enable = true;
 		cursor.size = 24;
 		polarity = "dark";
+		targets.nixvim.enable = false;
 		#image = ./background/background-cat.png;
 		image = ./background/background-mac.png;
 		#image = .background/background-gruv.png;
