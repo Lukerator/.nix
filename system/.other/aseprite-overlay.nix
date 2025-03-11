@@ -20,7 +20,7 @@ self: super: {
 		};
 		buildInputs = oldAttrs.buildInputs ++ [
 			super.glfw
-			super.skia
+			super.skia-aseprite
 			super.libpng
 			super.freetype
 			super.tinyxml2
