@@ -1,6 +1,5 @@
 self: super: {
-	aseprite = import ./asepritepkg.nix { pkgs = super; };
-	/* aseprite = super.aseprite.overrideAttrs (oldAttrs: {
+	aseprite = super.aseprite.overrideAttrs (oldAttrs: {
 		patches = [];
 		postPatch = "";
 		version = "1.3.14-beta1";
@@ -32,5 +31,5 @@ self: super: {
 		# 	owner = "aseprite";
 		# 	hash = "sha256-cwlByoLMD90ex97n5kdSM7FOdKK1bvMDXA1AJdaGDV0=";
 		# };
-	}); */
+	});
 }
