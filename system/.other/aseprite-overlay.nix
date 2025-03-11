@@ -7,7 +7,8 @@ self: super: {
 		nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ super.ninja ];
 		src = super.fetchgit {
 			url = "https://github.com/aseprite/aseprite.git";
-			hash = "sha256-+M2idJs5nNvFYNYQe9nCU/+WMF4Y7E8rBw/3F38BWHY=";
+			# hash = "sha256-+M2idJs5nNvFYNYQe9nCU/+WMF4Y7E8rBw/3F38BWHY=";
+			hash = "sha256-cwlByoLMD90ex97n5kdSM7FOdKK1bvMDXA1AJdaGDV0=";
 		};
 		/* src = super.fetchFromGitHub {
 			rev = "";
