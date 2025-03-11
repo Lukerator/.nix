@@ -37,7 +37,6 @@
 		swaynotificationcenter
 		swayosd
 		swaylock-effects
-		tinyxml2
 		typst
 		unzip
 		waybar

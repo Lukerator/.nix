@@ -3,7 +3,11 @@ self: super: {
 		patches = [];
 		postPatch = "";
 		version = "1.3.14-beta1";
-		cmakeFlags = oldAttrs.cmakeFlags ++ [ "-DENABLE_SKIA=ON" ];
+		cmakeFlags = oldAttrs.cmakeFlags ++ [
+			"-DENABLE_SKIA=ON"
+			"-DTINYXML2_INCLUDE_DIR=${super.tinyxml2}/include"
+			"-DTINYXML2_LIBRARY=${super.tinyxml2}/lib/libtinyxml2.so"
+		];
 		nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [
 			super.cmake
 			super.ninja
