@@ -1,5 +1,6 @@
 self: super: {
-	aseprite = super.aseprite.overrideAttrs (oldAttrs: {
+	aseprite = import ./asepritepkg.nix { pkgs = super; };
+	/* aseprite = super.aseprite.overrideAttrs (oldAttrs: {
 		patches = [];
 		postPatch = "";
 		version = "1.3.14-beta1";
@@ -25,11 +26,11 @@ self: super: {
 			super.freetype
 			super.tinyxml2
 		];
-		/* src = super.fetchFromGitHub {
-			rev = "";
-			repo = "aseprite";
-			owner = "aseprite";
-			hash = "sha256-cwlByoLMD90ex97n5kdSM7FOdKK1bvMDXA1AJdaGDV0=";
-		}; */
-	});
+		# src = super.fetchFromGitHub {
+		# 	rev = "";
+		# 	repo = "aseprite";
+		# 	owner = "aseprite";
+		# 	hash = "sha256-cwlByoLMD90ex97n5kdSM7FOdKK1bvMDXA1AJdaGDV0=";
+		# };
+	}); */
 }
