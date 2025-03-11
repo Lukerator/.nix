@@ -9,6 +9,7 @@ self: super: {
 			"-DTINYXML2_LIBRARY=${super.tinyxml2}/lib/libtinyxml2.so"
 		];
 		nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [
+			super.tinyxml2
 			super.cmake
 			super.ninja
 			super.pkg-config
@@ -19,11 +20,11 @@ self: super: {
 			hash = "sha256-cwlByoLMD90ex97n5kdSM7FOdKK1bvMDXA1AJdaGDV0=";
 		};
 		buildInputs = oldAttrs.buildInputs ++ [
+			super.tinyxml2
 			super.glfw
 			super.skia-aseprite
 			super.libpng
 			super.freetype
-			super.tinyxml2
 		];
 		# src = super.fetchFromGitHub {
 		# 	rev = "";
