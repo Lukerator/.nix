@@ -5,7 +5,7 @@ self: super: {
 		version = "1.3.14-beta1";
 		cmakeFlags = oldAttrs.cmakeFlags ++ [ "-DENABLE_SKIA=ON" ];
 		nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ super.ninja ];
-		src = super.fetchGit {
+		src = super.fetchgit {
 			url = "https://github.com/aseprite/aseprite.git";
 			hash = "sha256-+M2idJs5nNvFYNYQe9nCU/+WMF4Y7E8rBw/3F38BWHY=";
 		};
