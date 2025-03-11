@@ -1,6 +1,7 @@
 self: super: {
 	aseprite = super.aseprite.overrideAttrs (oldAttrs: {
 		patches = [];
+		postPatch = "";
 		version = "1.3.14-beta1";
 		src = super.fetchFromGitHub {
 			repo = "aseprite";
