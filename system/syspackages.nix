@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
-		aseprite
 		brightnessctl
 		calibre
 		dtrx
