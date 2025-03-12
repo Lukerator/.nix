@@ -1,5 +1,5 @@
 { lib, stdenv, fetchgit, cmake, ninja, tinyxml2 }:
-stdenv.mkDerivation {
+stdenv.mkDerivation rec {
 	pname = "aseprite-beta";
 	version = "1.3.14-beta1";
 	cmakeFlags = [
