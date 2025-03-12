@@ -10,7 +10,7 @@ let
 			sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 		};
 		nativeBuildInputs = with pkgs; [ cmake ninja python3 ];
-		buildInputs = with pkgs; [ clang libcxx libcxxabi ];
+		buildInputs = with pkgs; [ clang libcxx ];
 		buildPhase = ''
 			bin/gn gen out/Release --args="is_official_build=true skia_use_system_libpng=false"
 			ninja -C out/Release
