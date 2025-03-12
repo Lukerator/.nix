@@ -3,8 +3,8 @@ stdenv.mkDerivation {
 	pname = "aseprite-beta";
 	version = "1.3.14-beta1";
 	cmakeFlags = [
-		"-DTINYXML2_DIR=${tinyxml2}"
-		"-DCMAKE_PREFIX_PATH=${tinyxml2}"
+		"-DTINYXML2_DIR=${tinyxml2.dev}"
+		"-DCMAKE_PREFIX_PATH=${tinyxml2.dev}"
 	];
 	src = fetchgit {
 		rev = "HEAD";
@@ -18,10 +18,6 @@ stdenv.mkDerivation {
 	buildInputs = [
 		tinyxml2
 	];
-	/* installPhase = ''
-		mkdir -p $out/bin
-		cp aseprite $out/bin/aseprite
-	''; */
 	meta = {
 		description = "Sprite editor";
 		platforms = lib.platforms.linux;
