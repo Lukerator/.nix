@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
-		(import ./aseprite.nix { inherit pkgs; })
 		brightnessctl
 		calibre
 		dtrx
@@ -32,6 +31,7 @@
 		protonup-qt
 		python3
 		qbittorrent-enhanced
+		skia-aseprite
 		syncthing
 		swaybg
 		swaynotificationcenter
