@@ -9,7 +9,7 @@
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
 			pname = "skia-aseprite";
 			version = "m124-eadfe707ca";
-			cmakeFlags = old.cmakeFlags ++ [
+			cmakeFlags = (old.cmakeFlags or []) ++ [
 				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
 				"-DJPEG_LIBRARY=${pkgs.libjpeg_turbo}/lib"
 			];
