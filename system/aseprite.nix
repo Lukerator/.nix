@@ -28,6 +28,7 @@
 			postUnpack = ''
 				mkdir -p $sourceRoot/third_party/externals/wuffs
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
+				cp -r ${pkgs.libjpeg_turbo}/* $sourceRoot/third_party/externals/libjpeg-turbo/
 			'';
 		});
 	};
