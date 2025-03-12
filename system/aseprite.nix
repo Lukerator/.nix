@@ -33,9 +33,8 @@
 			};
 			postUnpack = ''
 				mkdir -p $sourceRoot/third_party/externals/wuffs
-				mkdir -p $sourceRoot/third_party/externals/libjpeg-turbo
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
-				cp -r ${libjpeg-turbo}/* $sourceRoot/third_party/externals/libjpeg-turbo/
+				cp -r ${libjpeg-turbo}* $sourceRoot/third_party/externals/libjpeg-turbo
 			'';
 		});
 	};
