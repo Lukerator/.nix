@@ -1,5 +1,5 @@
 { pkgs, ... }: let
-	wuffs = pkgs.fetchFromGitHub {
+	/* wuffs = pkgs.fetchFromGitHub {
 		rev = "main";
 		repo = "wuffs";
 		owner = "google";
@@ -25,7 +25,7 @@
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
 			'';
 		});
-	};
+	}; */
 	aseprite-overlay = final: prev: {
 		aseprite = prev.aseprite.overrideAttrs (old: {
 			patches = [];
@@ -64,12 +64,13 @@
 				"-DSKIA_DIR=${pkgs.skia-aseprite}"
 				"-DSKIA_LIBRARY_DIR=${pkgs.skia-aseprite}/lib"
 				"-DSKIA_LIBRARY=${pkgs.skia-aseprite}/lib/libskia.a"
+				"-DSKIA_USE_SYSTEM_LIBJPEG_TURBO=ON"
 			];
 		});
 	};
 in {
 	nixpkgs.overlays = [
-		skia-aseprite
+		# skia-aseprite
 		aseprite-overlay
 	];
 }
