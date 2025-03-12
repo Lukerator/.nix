@@ -33,8 +33,8 @@
 			pname = "aseprite";
 			version = "1.3.14-beta1";
 			postUnpack = ''
-				mkdir -p $sourceRoot/third_party/externals/libjpeg-turbo
-				cp -r ${pkgs.libjpeg_turbo}/* $sourceRoot/third_party/externals/libjpeg-turbo/
+				mkdir -p /nix/store/hv2p2378vf7zm3k7dpmn8vg0na7c8ixa-skia-aseprite-m102-861e4743af/third_party/externals/libjpeg-turbo
+				cp -r ${pkgs.libjpeg_turbo}/* /nix/store/hv2p2378vf7zm3k7dpmn8vg0na7c8ixa-skia-aseprite-m102-861e4743af/third_party/externals/libjpeg-turbo
 			'';
 			src = pkgs.fetchFromGitHub {
 				repo = "aseprite";
