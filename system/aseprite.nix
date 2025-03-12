@@ -9,7 +9,7 @@ let
       owner = "aseprite";
       repo = "skia";
       rev = "aseprite-m117";
-      sha256 = "replace-with-correct-sha256";
+      sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
     };
 
     nativeBuildInputs = [ cmake ninja python3 ];
@@ -34,7 +34,7 @@ in pkgs.stdenv.mkDerivation rec {
     owner = "aseprite";
     repo = "aseprite";
     rev = "main";
-    sha256 = "replace-with-correct-sha256";
+    sha256 = "sha256-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB";
   };
 
   nativeBuildInputs = [ cmake ninja pkgs.pkg-config ];

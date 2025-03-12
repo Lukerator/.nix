@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
-		(import ./aseprite.nix { inherit lib stdenv fetchFromGitHub cmake ninja python3 clang libcxx libcxxabi; })
+		(import ./aseprite.nix { inherit pkgs lib stdenv fetchFromGitHub cmake ninja python3 clang libcxx libcxxabi; })
 		brightnessctl
 		calibre
 		dtrx
