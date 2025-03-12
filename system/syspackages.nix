@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
-		(callPackage ./aseprite/aseprite-beta.nix {})
 		brightnessctl
 		calibre
 		dtrx
