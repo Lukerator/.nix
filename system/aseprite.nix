@@ -1,13 +1,15 @@
 { pkgs, ... }: let
+	wuffs = pkgs.fetchFromGitHub {
+		rev = "main";
+		repo = "wuffs";
+		owner = "google";
+		hash = "sha256-o9tL2XlmNCPeADCdG6B9f6hXaEUiPT4CdkGBvW2iP5A=";
+	};
 	skia-aseprite = final: prev: {
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
 			pname = "skia-aseprite";
 			version = "m124-eadfe707ca";
 			nativeBuildInputs = old.nativeBuildInputs ++ [
-				(pkgs.fetchurl {
-					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.3.c";
-					hash = "sha256-o9tL2XlmNCPeADCdG6B9f6hXaEUiPT4CdkGBvW2iP5A=";
-				})
 				pkgs.git
 				pkgs.curl
 			];
@@ -19,11 +21,8 @@
 				hash = "sha256-NVysvkmS2hu+8V3TA/oQb60NDI/jaJ/FEEi48Ab1fjQ=";
 			};
 			postUnpack = ''
-				mkdir -p $sourceRoot/third_party/externals/wuffs/release/c
-				cp ${pkgs.fetchurl {
-					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.3.c";
-					hash = "sha256-o9tL2XlmNCPeADCdG6B9f6hXaEUiPT4CdkGBvW2iP5A=";
-				}} $sourceRoot/third_party/externals/wuffs/release/c/wuffs-v0.3.c
+				mkdir -p $sourceRoot/third_party/externals/wuffs
+				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
 			'';
 		});
 	};
