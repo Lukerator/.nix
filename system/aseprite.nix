@@ -32,6 +32,10 @@
 			postPatch = "";
 			pname = "aseprite";
 			version = "1.3.14-beta1";
+			postUnpack = ''
+				mkdir -p $sourceRoot/third_party/externals/libjpeg-turbo
+				cp -r ${pkgs.libjpeg_turbo}/* $sourceRoot/third_party/externals/libjpeg-turbo/
+			'';
 			src = pkgs.fetchFromGitHub {
 				repo = "aseprite";
 				owner = "aseprite";
@@ -64,7 +68,6 @@
 				"-DSKIA_DIR=${pkgs.skia-aseprite}"
 				"-DSKIA_LIBRARY_DIR=${pkgs.skia-aseprite}/lib"
 				"-DSKIA_LIBRARY=${pkgs.skia-aseprite}/lib/libskia.a"
-				"-DSKIA_USE_SYSTEM_LIBJPEG_TURBO=ON"
 			];
 		});
 	};
