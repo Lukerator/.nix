@@ -39,7 +39,7 @@ clangStdenv.mkDerivation (finalAttrs: {
     repo = "aseprite";
     rev = "v" + finalAttrs.version;
     fetchSubmodules = true;
-    hash = "";
+    hash = "sha256-8OwwHCFP55pwLjk5O+a36hDZf9uX3P7cNliJM5SZdAg=";
   };
 
   nativeBuildInputs = [
