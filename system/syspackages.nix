@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
 	environment.systemPackages = with pkgs; [
-		(callPackage ./aseprite.nix)
+		(import ./aseprite.nix { inherit lib stdenv fetchFromGitHub cmake ninja python3 clang libcxx libcxxabi; })
 		brightnessctl
 		calibre
 		dtrx
@@ -32,7 +32,6 @@
 		protonup-qt
 		python3
 		qbittorrent-enhanced
-		skia-aseprite
 		syncthing
 		swaybg
 		swaynotificationcenter

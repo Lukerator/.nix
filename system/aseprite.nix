@@ -1,27 +1,55 @@
-{ lib, stdenv, fetchFromGitHub, cmake, ninja, boost, pkgconfig, skia, zlib }:
-stdenv.mkDerivation rec {
-	pname = "aseprite";
-	version = "1.3.14-beta1";
-	src = fetchFromGitHub {
-		owner = "aseprite";
-		repo = "aseprite";
-		rev = "v${version}";
-		sha256 = "<insert-sha256-hash-here>";
-	};
-	nativeBuildInputs = [ cmake ninja pkgconfig ];
-	buildInputs = [ boost skia zlib ];
-	cmakeFlags = [
-		"-DUSE_SHARED_CURL=OFF"
-		"-DUSE_SHARED_GIFLIB=OFF"
-		"-DUSE_SHARED_LIBPNG=OFF"
-		"-DUSE_SHARED_TINYXML=OFF"
-		"-DUSE_SHARED_PIXMAN=OFF"
-		"-DUSE_SHARED_FREETYPE=OFF"
-	];
-	meta = with lib; {
-		description = "Animated sprite editor and pixel art tool";
-		homepage = "https://aseprite.org/";
-		license = licenses.proprietary;
-		platforms = platforms.linux;
-	};
+{ pkgs, fetchFromGitHub, cmake, ninja, python3, clang, libcxx, libcxxabi, ... }:
+
+let
+  skia = pkgs.stdenv.mkDerivation rec {
+    pname = "skia-aseprite";
+    version = "m117";
+
+    src = fetchFromGitHub {
+      owner = "aseprite";
+      repo = "skia";
+      rev = "aseprite-m117";
+      sha256 = "replace-with-correct-sha256";
+    };
+
+    nativeBuildInputs = [ cmake ninja python3 ];
+    buildInputs = [ clang libcxx libcxxabi ];
+
+    buildPhase = ''
+      bin/gn gen out/Release --args="is_official_build=true skia_use_system_libpng=false"
+      ninja -C out/Release
+    '';
+
+    installPhase = ''
+      mkdir -p $out
+      cp -r out/Release $out/
+    '';
+  };
+
+in pkgs.stdenv.mkDerivation rec {
+  pname = "aseprite";
+  version = "1.3.14-beta1";
+
+  src = fetchFromGitHub {
+    owner = "aseprite";
+    repo = "aseprite";
+    rev = "main";
+    sha256 = "replace-with-correct-sha256";
+  };
+
+  nativeBuildInputs = [ cmake ninja pkgs.pkg-config ];
+  buildInputs = [ skia pkgs.boost pkgs.libpng pkgs.zlib pkgs.glfw pkgs.gcc ];
+
+  cmakeFlags = [ "-DCMAKE_BUILD_TYPE=Release" "-DLAF_BACKEND=skia" ];
+
+  buildPhase = ''
+    mkdir -p build && cd build
+    cmake .. $cmakeFlags
+    ninja aseprite
+  '';
+
+  installPhase = ''
+    mkdir -p $out/bin
+    cp bin/aseprite $out/bin/
+  '';
 }
