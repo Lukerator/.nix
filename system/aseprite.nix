@@ -64,8 +64,8 @@
 				"-DSKIA_DIR=${pkgs.skia-aseprite}"
 				"-DSKIA_LIBRARY_DIR=${pkgs.skia-aseprite}/lib"
 				"-DSKIA_LIBRARY=${pkgs.skia-aseprite}/lib/libskia.a"
-				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
-				"-DJPEG_INCLUDE=${pkgs.libjpeg_turbo.dev}/lib}"
+				"-DLIBJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
+				"-DLIBJPEG_INCLUDE=${pkgs.libjpeg_turbo.dev}/lib}"
 			];
 		});
 	};
