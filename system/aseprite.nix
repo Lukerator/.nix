@@ -6,7 +6,7 @@
 			nativeBuildInputs = old.nativeBuildInputs ++ [
 				(pkgs.fetchurl {
 					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.3.c";
-					hash = "sha256-UdL3O3V636sQU4b9NkGuvWnavDoZEm1eBgtplu3pRxQ=";
+					hash = "sha256-o9tL2XlmNCPeADCdG6B9f6hXaEUiPT4CdkGBvW2iP5A=";
 				})
 				pkgs.git
 				pkgs.curl
@@ -22,7 +22,7 @@
 				mkdir -p $sourceRoot/third_party/externals/wuffs/release/c
 				cp ${pkgs.fetchurl {
 					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.3.c";
-					hash = "sha256-UdL3O3V636sQU4b9NkGuvWnavDoZEm1eBgtplu3pRxQ=";
+					hash = "sha256-o9tL2XlmNCPeADCdG6B9f6hXaEUiPT4CdkGBvW2iP5A=";
 				}} $sourceRoot/third_party/externals/wuffs/release/c/wuffs-v0.3.c
 			'';
 		});
