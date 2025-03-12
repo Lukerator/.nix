@@ -16,11 +16,18 @@
 			pname = "skia-aseprite";
 			version = "m124-eadfe707ca";
 			cmakeFlags = (old.cmakeFlags or []) ++ [
-				"-DJPEG_INCLUDE_DIR=${libjpeg-turbo.dev}/include"
+				"-DJPEG_INCLUDE_DIR=${libjpeg-turbo}/include"
 				"-DJPEG_LIBRARY=${libjpeg-turbo}/lib/libjpeg.a"
+				"-DUSE_ICU=ON"
+				"-DICU_INCLUDE_DIR=${pkgs.icu}/include"
+				"-DICU_LIBRARY=${pkgs.icu}/lib/libicu.a"
+				"-DLAF_BACKEND=skia"
+				"-DSKIA_DIR=${pkgs.skia}/lib"
+				"-DSKIA_LIBRARY=${pkgs.skia}/lib/libskia.a"
 			];
 			nativeBuildInputs = old.nativeBuildInputs ++ [
 				pkgs.git
+				pkgs.icu
 				pkgs.curl
 			];
 			src = pkgs.fetchFromGitHub {
@@ -33,10 +40,13 @@
 			postUnpack = ''
 				mkdir -p $sourceRoot/third_party/externals/wuffs
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
-				echo "libjpeg include path: ${libjpeg-turbo.dev}/include"
+				echo "libjpeg include path: ${libjpeg-turbo}/include"
 				echo "libjpeg library path: ${libjpeg-turbo}/lib/libjpeg.a"
+				cp -r ${libjpeg-turbo}* $sourceRoot/third_party/externals/libjpeg-turbo
+				ls $sourceRoot/third_party/externals
+				mkdir -p $sourceRoot/third_party/externals/icu/flutter
+				cp -r ${pkgs.icu}/lib/* $sourceRoot/third_party/externals/icu/flutter/
 			'';
-				# cp -r ${libjpeg-turbo}* $sourceRoot/third_party/externals/libjpeg-turbo
 		});
 	};
 	aseprite-overlay = final: prev: {
