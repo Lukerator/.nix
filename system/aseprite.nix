@@ -8,7 +8,7 @@
 	skia-aseprite = final: prev: {
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
 			pname = "skia-aseprite";
-			version = "m124-eadfe707ca";
+			version = "m124-8c6cfae8c5";
 			cmakeFlags = (old.cmakeFlags or []) ++ [
 				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
 				"-DJPEG_LIBRARY=${pkgs.libjpeg_turbo}/lib"
@@ -22,7 +22,7 @@
 				repo = "skia";
 				owner = "aseprite";
 				fetchSubmodules = true;
-				tag = "m124-eadfe707ca";
+				tag = "m124-8c6cfae8c5";
 				hash = "sha256-NVysvkmS2hu+8V3TA/oQb60NDI/jaJ/FEEi48Ab1fjQ=";
 			};
 			postUnpack = ''
