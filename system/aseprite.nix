@@ -55,6 +55,7 @@
 			postPatch = "";
 			pname = "aseprite";
 			version = "1.3.14-beta1";
+			cmakeConfigureFlags = (old.cmakeConfigureFlags or []) ++ [ "-DCMAKE_PREFIX_PATH=${pkgs.libjpeg_turbo}/lib" ];
 			src = pkgs.fetchFromGitHub {
 				repo = "aseprite";
 				owner = "aseprite";
