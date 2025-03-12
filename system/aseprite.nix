@@ -16,13 +16,12 @@
 			pname = "skia-aseprite";
 			version = "m124-eadfe707ca";
 			cmakeFlags = (old.cmakeFlags or []) ++ [
-				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
-				"-DJPEG_LIBRARY=${pkgs.libjpeg_turbo}/lib/libjpeg.a"
+				"-DJPEG_INCLUDE_DIR=${libjpeg-turbo.dev}/include"
+				"-DJPEG_LIBRARY=${libjpeg-turbo}/lib/libjpeg.a"
 			];
 			nativeBuildInputs = old.nativeBuildInputs ++ [
 				pkgs.git
 				pkgs.curl
-				pkgs.libjpeg_turbo
 			];
 			src = pkgs.fetchFromGitHub {
 				repo = "skia";
@@ -34,8 +33,8 @@
 			postUnpack = ''
 				mkdir -p $sourceRoot/third_party/externals/wuffs
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
-				echo "libjpeg include path: ${pkgs.libjpeg_turbo.dev}/include"
-				echo "libjpeg library path: ${pkgs.libjpeg_turbo}/lib/libjpeg.a"
+				echo "libjpeg include path: ${libjpeg-turbo.dev}/include"
+				echo "libjpeg library path: ${libjpeg-turbo}/lib/libjpeg.a"
 			'';
 				# cp -r ${libjpeg-turbo}* $sourceRoot/third_party/externals/libjpeg-turbo
 		});
