@@ -3,7 +3,7 @@
 		rev = "main";
 		repo = "wuffs";
 		owner = "google";
-		hash = "sha256-o9tL2XlmNCPeADCdG6B9f6hXaEUiPT4CdkGBvW2iP5A=";
+		hash = "sha256-Ea+U+nn+lq3N/Sy2ANZB3+UYGtHAJpzXjIBfg3eI61o=";
 	};
 	skia-aseprite = final: prev: {
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
