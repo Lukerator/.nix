@@ -19,6 +19,7 @@
 				pkg-config
 			];
 			buildInputs = with pkgs; [
+				xorg.libX11
 				zlib
 				libpng
 				libwebp
