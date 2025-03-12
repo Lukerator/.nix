@@ -5,6 +5,12 @@
 		owner = "google";
 		hash = "sha256-Ea+U+nn+lq3N/Sy2ANZB3+UYGtHAJpzXjIBfg3eI61o=";
 	};
+	libjpeg-turbo = pkgs.fetchFromGitHub {
+		rev = "main";
+		repo = "libjpeg-turbo";
+		owner = "libjpeg-turbo";
+		hash = "sha256-+5qS7tYw7kXu0k+e9m+Vp7V1r7hjgCtDc9+o2d8zWt0=";
+	};
 	skia-aseprite = final: prev: {
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
 			pname = "skia-aseprite";
@@ -28,7 +34,7 @@
 			postUnpack = ''
 				mkdir -p $sourceRoot/third_party/externals/wuffs
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
-				cp -r ${pkgs.libjpeg_turbo}/* $sourceRoot/third_party/externals/libjpeg-turbo/
+				cp -r ${libjpeg-turbo}/* $sourceRoot/third_party/externals/libjpeg-turbo/
 			'';
 		});
 	};
