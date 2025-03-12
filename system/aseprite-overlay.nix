@@ -5,35 +5,38 @@ self: super: {
 
 		src = super.fetchFromGitHub {
 			repo = "skia";
+			deepClone = true;
 			owner = "aseprite";
 			tag = "${version}";
 			fetchSubmodules = true;
-			sha256 = "sha256-NVysvkmS2hu+8V3TA/oQb60NDI/jaJ/FEEi48Ab1fjQ=";
+			sha256 = "sha256-vaxaO0fUScmMMLSfTxznMFWBfMoIzMRaMMmwsNIdAPo=";
 		};
 
-		nativeBuildInputs = with super; [ ninja python3 gnumake clang cmake perl pkg-config ];
+		nativeBuildInputs = with super; [ ninja python3 gnumake clang cmake perl pkg-config gn freetype ];
 
 		buildInputs = with super; [ fontconfig freetype libpng zlib icu ];
 
+		configurePhase = ''
+		'';
+
 		buildPhase = ''
-			bin/gn gen out/Release --args="
-				is_official_build=true
-				is_component_build=false
-				is_debug=false
-				skia_use_system_freetype2=false
-				skia_use_system_libpng=false
-				skia_use_system_zlib=false
-				skia_use_gl=false
-				skia_use_angle=false
-				skia_use_dng_sdk=false
-				skia_use_vulkan=false
-				skia_use_metal=false
-				skia_use_egl=false
-				skia_use_expat=false
-				skia_use_libjpeg_turbo=false
-				skia_use_piex=false
-				skia_use_system_icu=false
-				skia_use_system_harfbuzz=false
+			gn gen out/Release --args="
+                                is_official_build=true
+                                is_component_build=false
+                                is_debug=false
+                                skia_use_system_freetype2=false
+                                skia_use_system_libpng=false
+                                skia_use_system_zlib=false
+                                skia_use_gl=false
+                                skia_use_angle=false
+                                skia_use_dng_sdk=false
+                                skia_use_vulkan=false
+                                skia_use_metal=false
+                                skia_use_egl=false
+                                skia_use_expat=false
+                                skia_use_piex=false
+                                skia_use_system_icu=false
+                                skia_use_system_harfbuzz=false
 			"
 			ninja -C out/Release skia modules
 		'';
@@ -53,7 +56,7 @@ self: super: {
 			owner = "aseprite";
 			rev = "v${version}";
 			fetchSubmodules = true;
-			sha256 = "sha256-pJ4YljF9wut9SYW3v+gcOswv8nRSzvjIfbmG0vjBDqQ=";
+			sha256 = "sha256-qJOyT9ib/WcNVa1yXiD2QZzE5nHbCrgQcTupxapa07A=";
 		};
 
 		nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [
@@ -82,9 +85,18 @@ self: super: {
 				-DCMAKE_BUILD_TYPE=Release \
 				-DLAF_BACKEND=skia \
 				-DSKIA_DIR=${self.skia} \
+		'';
+
+		/* configurePhase = ''
+			mkdir -p build
+			cd build
+			cmake .. \
+				-DCMAKE_BUILD_TYPE=Release \
+				-DLAF_BACKEND=skia \
+				-DSKIA_DIR=${self.skia} \
 				-DSKIA_LIBRARY_DIR=${self.skia}/lib \
 				-DSKIA_INCLUDE_DIR=${self.skia}/include
-		'';
+		''; */
 
 		buildPhase = ''
 			cmake --build . --config Release --target aseprite
