@@ -19,11 +19,11 @@
 				hash = "sha256-NVysvkmS2hu+8V3TA/oQb60NDI/jaJ/FEEi48Ab1fjQ=";
 			};
 			postUnpack = ''
-				mkdir -p $sourceRoot/third_party/externals/wuffs/release/c
+				mkdir -p $sourceRootthird_party/externals/wuffs/release/c
 				cp ${pkgs.fetchurl {
 					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.4.c";
 					hash = "sha256-UdL3O3V636sQU4b9NkGuvWnavDoZEm1eBgtplu3pRxQ=";
-				}} $sourceRoot/third_party/externals/wuffs/release/c/wuffs-v0.4.c
+				}} $sourceRootthird_party/externals/wuffs/release/c/wuffs-v0.4.c
 			'';
 		});
 	};
