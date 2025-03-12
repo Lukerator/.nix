@@ -1,14 +1,16 @@
-{ config, pkgs, ... }: let
+{ pkgs, ... }: let
 	aseprite-overlay = final: prev: {
-		aseprite = prev.aseprite.overrideAttrs (old: rec {
+		aseprite = prev.aseprite.overrideAttrs (old: {
+			patches = [];
+			postPatch = "";
 			pname = "aseprite";
 			version = "1.3.14-beta1";
-			src = pkgs.fetchFromGithub {
-				sha256 = "";
+			src = pkgs.fetchFromGitHub {
 				repo = "aseprite";
 				owner = "aseprite";
 				rev = "v1.3.14-beta1";
 				fetchSubmodules = true;
+				hash = "sha256-1JO9BcSw/Mg3Zr6FSdvJ/4JueyIzb9SgXfZHy/KHUlg=";
 			};
 			nativeBuildInputs = with pkgs; [
 				clang
@@ -23,6 +25,7 @@
 				freetype
 				fontconfig
 				skia-aseprite
+				xorg.libxcb.dev
 			];
 			cmakeFlags = [
 				"-DLAF_BACKEND=skia"
