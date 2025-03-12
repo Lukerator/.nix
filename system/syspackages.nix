@@ -1,6 +1,10 @@
 { pkgs, ... }:
 {
+	nixpkgs.overlays = [
+		(import ./aseprite-overlay.nix)
+	];
 	environment.systemPackages = with pkgs; [
+		aseprite
 		brightnessctl
 		calibre
 		dtrx
