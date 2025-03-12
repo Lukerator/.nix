@@ -32,6 +32,7 @@
 		protonup-qt
 		python3
 		qbittorrent-enhanced
+		skia-aseprite
 		syncthing
 		swaybg
 		swaynotificationcenter
