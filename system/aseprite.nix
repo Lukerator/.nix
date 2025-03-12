@@ -16,8 +16,8 @@
 			pname = "skia-aseprite";
 			version = "m124-eadfe707ca";
 			cmakeFlags = (old.cmakeFlags or []) ++ [
-				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
-				"-DJPEG_LIBRARY=${pkgs.libjpeg_turbo}/lib"
+				"-DJPEG_INCLUDE_DIR=${libjpeg-turbo}/include"
+				"-DJPEG_LIBRARY=${libjpeg-turbo}/lib"
 			];
 			nativeBuildInputs = old.nativeBuildInputs ++ [
 				pkgs.git
