@@ -1,5 +1,5 @@
 { pkgs, ... }: let
-	/* wuffs = pkgs.fetchFromGitHub {
+	wuffs = pkgs.fetchFromGitHub {
 		rev = "main";
 		repo = "wuffs";
 		owner = "google";
@@ -9,9 +9,14 @@
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
 			pname = "skia-aseprite";
 			version = "m124-eadfe707ca";
+			cmakeFlags = old.cmakeFlags ++ [
+				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
+				"-DJPEG_LIBRARY=${pkgs.libjpeg_turbo}/lib"
+			];
 			nativeBuildInputs = old.nativeBuildInputs ++ [
 				pkgs.git
 				pkgs.curl
+				pkgs.libjpeg_turbo
 			];
 			src = pkgs.fetchFromGitHub {
 				repo = "skia";
@@ -25,7 +30,7 @@
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
 			'';
 		});
-	}; */
+	};
 	aseprite-overlay = final: prev: {
 		aseprite = prev.aseprite.overrideAttrs (old: {
 			patches = [];
@@ -48,14 +53,12 @@
 			buildInputs = with pkgs; [
 				zlib
 				libpng
-				# libjpeg
 				libwebp
 				freetype
 				fontconfig
 				xorg.libXi
 				xorg.libX11
 				xorg.xinput
-				# libjpeg_turbo
 				xorg.libxcb.dev
 				xorg.libXcursor
 			];
@@ -64,14 +67,12 @@
 				"-DSKIA_DIR=${pkgs.skia-aseprite}"
 				"-DSKIA_LIBRARY_DIR=${pkgs.skia-aseprite}/lib"
 				"-DSKIA_LIBRARY=${pkgs.skia-aseprite}/lib/libskia.a"
-				/* "-DLIBJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
-				"-DLIBJPEG_INCLUDE=${pkgs.libjpeg_turbo.dev}/lib}" */
 			];
 		});
 	};
 in {
 	nixpkgs.overlays = [
-		# skia-aseprite
+		skia-aseprite
 		aseprite-overlay
 	];
 }
