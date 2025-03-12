@@ -9,7 +9,7 @@
 		rev = "main";
 		repo = "libjpeg-turbo";
 		owner = "libjpeg-turbo";
-		hash = "sha256-NTwRwO0N+RlFGpUNhLTV7G/UdPAxgZzLDUqO1n77bGY=";
+		hash = "sha256-8OwwHCFP55pwLjk5O+a36hDZf9uX3P7cNliJM5SZdAg=";
 	};
 	skia-aseprite = final: prev: rec {
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
