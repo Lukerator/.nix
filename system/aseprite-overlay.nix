@@ -53,7 +53,7 @@ self: super: {
       owner = "aseprite";
       repo = "aseprite";
       rev = "v${version}";
-      sha256 = "sha256-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"; # Replace with actual hash
+      sha256 = "sha256-pJ4YljF9wut9SYW3v+gcOswv8nRSzvjIfbmG0vjBDqQ="; # Replace with actual hash
     };
 
     nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [
