@@ -67,6 +67,7 @@
 				cmake
 				ninja
 				pkg-config
+				libjpeg_turbo
 			];
 			buildInputs = with pkgs; [
 				zlib
@@ -77,6 +78,7 @@
 				xorg.libXi
 				xorg.libX11
 				xorg.xinput
+				libjpeg_turbo
 				xorg.libxcb.dev
 				xorg.libXcursor
 			];
@@ -85,6 +87,8 @@
 				"-DSKIA_DIR=${pkgs.skia-aseprite}"
 				"-DSKIA_LIBRARY_DIR=${pkgs.skia-aseprite}/lib"
 				"-DSKIA_LIBRARY=${pkgs.skia-aseprite}/lib/libskia.a"
+				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
+				"-DJPEG_LIBRARY=${pkgs.libjpeg_turbo}/lib/libjpeg.a"
 			];
 		});
 	};
