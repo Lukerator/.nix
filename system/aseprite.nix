@@ -5,7 +5,7 @@
 			version = "m124-eadfe707ca";
 			nativeBuildInputs = old.nativeBuildInputs ++ [
 				(pkgs.fetchurl {
-					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.4.c";
+					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.3.c";
 					hash = "sha256-UdL3O3V636sQU4b9NkGuvWnavDoZEm1eBgtplu3pRxQ=";
 				})
 				pkgs.git
@@ -21,9 +21,9 @@
 			postUnpack = ''
 				mkdir -p $sourceRoot/third_party/externals/wuffs/release/c
 				cp ${pkgs.fetchurl {
-					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.4.c";
+					url = "https://raw.githubusercontent.com/google/wuffs/main/release/c/wuffs-v0.3.c";
 					hash = "sha256-UdL3O3V636sQU4b9NkGuvWnavDoZEm1eBgtplu3pRxQ=";
-				}} $sourceRoot/third_party/externals/wuffs/release/c/wuffs-v0.4.c
+				}} $sourceRoot/third_party/externals/wuffs/release/c/wuffs-v0.3.c
 			'';
 		});
 	};
