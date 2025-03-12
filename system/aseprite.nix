@@ -4,10 +4,10 @@ let
 		pname = "skia-aseprite";
 		version = "m124-eadfe707ca";
 		src = pkgs.fetchFromGitHub {
-			owner = "aseprite";
 			repo = "skia";
+			owner = "aseprite";
 			rev = "${version}";
-			sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+			hash = "";
 		};
 		nativeBuildInputs = with pkgs; [ cmake ninja python3 ];
 		buildInputs = with pkgs; [ clang libcxx ];
@@ -25,10 +25,10 @@ in
 		pname = "aseprite";
 		version = "1.3.14-beta1";
 		src = pkgs.fetchFromGitHub {
-			owner = "aseprite";
 			repo = "aseprite";
+			owner = "aseprite";
 			rev = "${version}";
-			sha256 = "sha256-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB";
+			hash = "";
 		};
 		nativeBuildInputs = with pkgs; [ cmake ninja pkgs.pkg-config ];
 		buildInputs = [ skia pkgs.boost pkgs.libpng pkgs.zlib pkgs.glfw pkgs.gcc ];
