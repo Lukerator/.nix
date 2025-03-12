@@ -19,13 +19,14 @@
 				pkg-config
 			];
 			buildInputs = with pkgs; [
-				xorg.libX11
 				zlib
 				libpng
 				libwebp
 				freetype
 				fontconfig
+				xorg.libX11
 				skia-aseprite
+				xorg.libXcursor
 				xorg.libxcb.dev
 			];
 			cmakeFlags = [
