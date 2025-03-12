@@ -50,6 +50,7 @@
 				pkg-config
 			];
 			buildInputs = with pkgs; [
+				sudo
 				zlib
 				libpng
 				libjpeg
