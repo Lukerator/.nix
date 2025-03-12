@@ -1,7 +1,6 @@
 {
 	imports =
 	[
-		./.other/asepritepkg.nix
 		./desktops/bundle.nix
 		./no-touchy/bundle.nix
 		./environment.nix
