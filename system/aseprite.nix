@@ -34,8 +34,10 @@
 			postUnpack = ''
 				mkdir -p $sourceRoot/third_party/externals/wuffs
 				cp -r ${wuffs}/* $sourceRoot/third_party/externals/wuffs/
-				cp -r ${libjpeg-turbo}* $sourceRoot/third_party/externals/libjpeg-turbo
+				echo "libjpeg include path: ${pkgs.libjpeg_turbo.dev}/include"
+				echo "libjpeg library path: ${pkgs.libjpeg_turbo}/lib/libjpeg.a"
 			'';
+				# cp -r ${libjpeg-turbo}* $sourceRoot/third_party/externals/libjpeg-turbo
 		});
 	};
 	aseprite-overlay = final: prev: {
