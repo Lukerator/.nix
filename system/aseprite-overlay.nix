@@ -8,7 +8,7 @@ self: super: {
       owner = "aseprite";
       repo = "skia";
       tag = "${version}";
-      sha256 = "sha256-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"; # Replace with actual hash
+      sha256 = "sha256-NVysvkmS2hu+8V3TA/oQb60NDI/jaJ/FEEi48Ab1fjQ="; # Replace with actual hash
     };
 
     nativeBuildInputs = with super; [ ninja python3 gnumake clang cmake perl pkg-config ];
