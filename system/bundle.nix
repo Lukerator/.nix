@@ -1,9 +1,9 @@
 {
 	imports =
 	[
+		./.other/asepritepkg.nix
 		./desktops/bundle.nix
 		./no-touchy/bundle.nix
-		./aseprite.nix
 		./environment.nix
 		./keyboard.nix
 		./manga.nix
