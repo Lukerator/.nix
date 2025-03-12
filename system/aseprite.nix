@@ -17,7 +17,7 @@
 			version = "m124-eadfe707ca";
 			cmakeFlags = (old.cmakeFlags or []) ++ [
 				"-DJPEG_INCLUDE_DIR=${libjpeg-turbo}/include"
-				"-DJPEG_LIBRARY=${libjpeg-turbo}/lib"
+				"-DJPEG_LIBRARY=${libjpeg-turbo}/lib/libjpeg.a"
 			];
 			nativeBuildInputs = old.nativeBuildInputs ++ [
 				pkgs.git
