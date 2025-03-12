@@ -48,14 +48,14 @@
 			buildInputs = with pkgs; [
 				zlib
 				libpng
-				libjpeg
+				# libjpeg
 				libwebp
 				freetype
 				fontconfig
 				xorg.libXi
 				xorg.libX11
 				xorg.xinput
-				libjpeg_turbo
+				# libjpeg_turbo
 				xorg.libxcb.dev
 				xorg.libXcursor
 			];
@@ -64,8 +64,8 @@
 				"-DSKIA_DIR=${pkgs.skia-aseprite}"
 				"-DSKIA_LIBRARY_DIR=${pkgs.skia-aseprite}/lib"
 				"-DSKIA_LIBRARY=${pkgs.skia-aseprite}/lib/libskia.a"
-				"-DLIBJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
-				"-DLIBJPEG_INCLUDE=${pkgs.libjpeg_turbo.dev}/lib}"
+				/* "-DLIBJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
+				"-DLIBJPEG_INCLUDE=${pkgs.libjpeg_turbo.dev}/lib}" */
 			];
 		});
 	};
