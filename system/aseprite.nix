@@ -3,7 +3,7 @@
 		rev = "main";
 		repo = "wuffs";
 		owner = "google";
-		hash = "sha256-Ea+U+nn+lq3N/Sy2ANZB3+UYGtHAJpzXjIBfg3eI61o=";
+		hash = "sha256-8OwwHCFP55pwLjk5O+a36hDZf9uX3P7cNliJM5SZdAg=";
 	};
 	libjpeg-turbo = pkgs.fetchFromGitHub {
 		rev = "main";
