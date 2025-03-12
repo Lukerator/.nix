@@ -11,7 +11,7 @@
 		owner = "libjpeg-turbo";
 		hash = "sha256-NTwRwO0N+RlFGpUNhLTV7G/UdPAxgZzLDUqO1n77bGY=";
 	};
-	skia-aseprite = final: prev: {
+	skia-aseprite = final: prev: rec {
 		skia-aseprite = prev.skia-aseprite.overrideAttrs (old: {
 			pname = "skia-aseprite";
 			version = "m124-eadfe707ca";
@@ -49,7 +49,7 @@
 			'';
 		});
 	};
-	aseprite-overlay = final: prev: {
+	aseprite-overlay = final: prev: rec {
 		aseprite = prev.aseprite.overrideAttrs (old: {
 			patches = [];
 			postPatch = "";
@@ -88,8 +88,6 @@
 				"-DSKIA_DIR=${pkgs.skia-aseprite}"
 				"-DSKIA_LIBRARY_DIR=${pkgs.skia-aseprite}/lib"
 				"-DSKIA_LIBRARY=${pkgs.skia-aseprite}/lib/libskia.a"
-				"-DJPEG_INCLUDE_DIR=${pkgs.libjpeg_turbo.dev}/include"
-				"-DJPEG_LIBRARY=${pkgs.libjpeg_turbo}/lib/libjpeg.a"
 			];
 		});
 	};
