@@ -1,14 +1,14 @@
 self: super: {
-	wuffs = super.fetchFromGitHub {
-		repo = "wuffs";
-		rev = "v0.3.c";
-		owner = "google";
-		hash = "";
-	};
 	skia = super.stdenv.mkDerivation rec {
 		pname = "skia";
 		version = "m124-eadfe707ca";
 
+		wuffs = super.fetchFromGitHub {
+			repo = "wuffs";
+			rev = "v0.3.c";
+			owner = "google";
+			hash = "";
+		};
 		src = super.fetchFromGitHub {
 			repo = "skia";
 			deepClone = true;
@@ -18,7 +18,12 @@ self: super: {
 			sha256 = "sha256-vaxaO0fUScmMMLSfTxznMFWBfMoIzMRaMMmwsNIdAPo=";
 		};
 
-		nativeBuildInputs = with super; [ ninja icu harfbuzz python3 gnumake clang cmake perl pkg-config gn freetype wuffs ];
+		postUnpack = ''
+			mkdir -p source/third_party/externals/wuffs
+			cp -r ${wuffs}/* source/third_party/externals/wuffs/
+		'';
+
+		nativeBuildInputs = with super; [ ninja icu harfbuzz python3 gnumake clang cmake perl pkg-config gn freetype ];
 
 		buildInputs = with super; [ fontconfig freetype libpng zlib icu ];
 
