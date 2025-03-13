@@ -1,4 +1,10 @@
 self: super: {
+	wuffs = super.fetchFromGitHub {
+		repo = "wuffs";
+		rev = "v0.3.c";
+		owner = "google";
+		hash = "";
+	};
 	skia = super.stdenv.mkDerivation rec {
 		pname = "skia";
 		version = "m124-eadfe707ca";
