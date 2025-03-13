@@ -7,8 +7,9 @@ self: super: {
 			repo = "wuffs";
 			rev = "v0.3.c";
 			owner = "google";
-			hash = "";
+			hash = "sha256-Ea+U+nn+lq3N/Sy2ANZB3+UYGtHAJpzXjIBfg3eI61o=";
 		};
+
 		src = super.fetchFromGitHub {
 			repo = "skia";
 			deepClone = true;
