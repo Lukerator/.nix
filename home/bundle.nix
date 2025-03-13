@@ -9,6 +9,7 @@
 		./home.nix
 		./stylix.nix
 		./waybar.nix
+		./zathura.nix
 		./zsh.nix
 	];
 }

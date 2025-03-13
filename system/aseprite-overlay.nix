@@ -12,7 +12,7 @@ self: super: {
 			sha256 = "sha256-vaxaO0fUScmMMLSfTxznMFWBfMoIzMRaMMmwsNIdAPo=";
 		};
 
-		nativeBuildInputs = with super; [ ninja python3 gnumake clang cmake perl pkg-config gn freetype ];
+		nativeBuildInputs = with super; [ ninja icu harfbuzz python3 gnumake clang cmake perl pkg-config gn freetype ];
 
 		buildInputs = with super; [ fontconfig freetype libpng zlib icu ];
 
@@ -24,19 +24,19 @@ self: super: {
                                 is_official_build=true
                                 is_component_build=false
                                 is_debug=false
-                                skia_use_system_freetype2=false
-                                skia_use_system_libpng=false
-                                skia_use_system_zlib=false
+                                skia_use_system_freetype2=true
+                                skia_use_system_libpng=true
+                                skia_use_system_zlib=true
                                 skia_use_gl=false
                                 skia_use_angle=false
                                 skia_use_dng_sdk=false
-                                skia_use_vulkan=false
+                                skia_use_vulkan=true
                                 skia_use_metal=false
                                 skia_use_egl=false
                                 skia_use_expat=false
                                 skia_use_piex=false
-                                skia_use_system_icu=false
-                                skia_use_system_harfbuzz=false
+                                skia_use_system_icu=true
+                                skia_use_system_harfbuzz=true
 			"
 			ninja -C out/Release skia modules
 		'';

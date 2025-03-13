@@ -1,8 +1,8 @@
 {
 	programs.waybar = {
 		enable = true;
-		#style = builtins.readFile ./waybar/style-cat.css;
-		style = builtins.readFile ./waybar/style-mac.css;
+		#style = builtins.readFile ./waybar/style-mocha.css;
+		style = builtins.readFile ./waybar/style-macchiato.css;
 		#style = builtins.readFile ./waybar/style-gruv.css;
 		settings = [{
 			layer = "top";
