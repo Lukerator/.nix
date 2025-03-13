@@ -42,7 +42,7 @@ self: super: {
                                 skia_use_gl=false
                                 skia_use_angle=false
                                 skia_use_dng_sdk=false
-                                skia_use_vulkan=true
+                                skia_use_vulkan=false
                                 skia_use_metal=false
                                 skia_use_egl=false
                                 skia_use_expat=false
