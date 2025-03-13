@@ -18,7 +18,7 @@ self: super: {
 			sha256 = "sha256-vaxaO0fUScmMMLSfTxznMFWBfMoIzMRaMMmwsNIdAPo=";
 		};
 
-		nativeBuildInputs = with super; [ ninja icu harfbuzz python3 gnumake clang cmake perl pkg-config gn freetype ];
+		nativeBuildInputs = with super; [ ninja icu harfbuzz python3 gnumake clang cmake perl pkg-config gn freetype wuffs ];
 
 		buildInputs = with super; [ fontconfig freetype libpng zlib icu ];
 
